@@ -3,9 +3,18 @@ const semester = require("./routes/semester")
 const theory = require("./routes/theory")
 const practical = require("./routes/practical")
 const index = require("./routes/index")
+const cors = require("cors");
+
+var corsOptions = {
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200
+  }
+
 
 const app = express();
 
+// Express application 'using' middlewares
+app.use(cors(corsOptions));
 app.use('/semester',semester)
 app.use("/theory",theory)
 app.use('/practical',practical)

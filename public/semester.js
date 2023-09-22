@@ -8,7 +8,13 @@ const semesters =
             "theory": [
                 {
                     "name":"mathematics",
-                    "URL": "theory/mathematics"
+                    "URL": "/theory/mathematics"
+                }
+            ],
+            "practical":[
+                {
+                    "name":"information-technology",
+                    "URL": "/practical/information-technology"
                 }
             ]
         }
