@@ -19,11 +19,14 @@ router.get(
         semesterData.forEach((semData,i) => {
             let index = i + 1;
             if (req.params.id == index){
-                switch(index){
-                    case 1:
-                        res.json(semData);
-                        break;
-                }
+                // switch(index){
+                //     case 1:
+                //         res.json(semData);
+                //         break;
+                //     case 4:
+                        
+                // }
+                res.json(semData)
             }
         });
     })
