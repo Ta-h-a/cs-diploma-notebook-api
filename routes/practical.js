@@ -9,8 +9,7 @@ router.get(
     "/:name",
     (req,res,next)=>{
         if(req.params.name === "all"){
-        res.json(practicalData)
-
+            res.json(practicalData);
         }
         // semesterData.map(
         //     (semData, index)=>{
