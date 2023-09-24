@@ -8,6 +8,10 @@ router.use("/experiment/",experiment)
 router.get(
     "/:name",
     (req,res,next)=>{
+        if(req.params.name === "all"){
+        res.json(practicalData)
+
+        }
         // semesterData.map(
         //     (semData, index)=>{
         //         if (req.params.id == index){
@@ -24,5 +28,6 @@ router.get(
             }
         });
     })
+
 
 module.exports = router;

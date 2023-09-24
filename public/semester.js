@@ -5,12 +5,12 @@ const semesters =
             "title": "First Semester",
             "description": "Welcome First Year Students. Choose your interested course and start studying !",
             // Here courses refer to our college subjects
-            "theory": [
-                {
-                    "name":"mathematics",
-                    "URL": "/theory/mathematics"
-                }
-            ],
+            // "theory": [
+            //     {
+            //         "name":"mathematics",
+            //         "URL": "/theory/mathematics"
+            //     }
+            // ],
             "practical":[
                 {
                     "title":"IT Skills",
@@ -35,11 +35,11 @@ const semesters =
             "title": "Fourth Semester",
             "description": "Welcome Fourth Year Students. Choose your interested course and start studying !😊",
             // Here courses refer to our college subjects
-            "theory": [
-                {
+            // "theory": [
+            //     {
 
-                }
-            ],
+            //     }
+            // ],
             "practical":[
                 {
                     "title":"DSA with Python",
