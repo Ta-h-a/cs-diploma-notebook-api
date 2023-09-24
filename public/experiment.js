@@ -17,7 +17,7 @@ const experimentData = [
         `Dictionary operations:`,
         `Finally, we work with dictionaries. We start with a dictionary that has keys 1, 2, 3, and 4, and their corresponding values 2, 3, 4, and "Python". We update the value of the key 1 to "Python", add a new key-value pair (key 5 with the value "Shambhavi"), and delete the key-value pair with the key 1. We also retrieve all the keys and values from the dictionary.`,
         `Conclusion`,
-        `This program provides a good overview of some of the basic operations that can be performed on different data types in Python.`
+        `This program provides a good overview of some of the basic operations that can be performed on different data types in Python.`,
     ],
         "ytLink": "https://www.youtube.com/embed/C_XRxLPGbUw",
         "sources": [
