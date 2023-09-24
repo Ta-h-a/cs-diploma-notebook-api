@@ -6,7 +6,7 @@ const index = require("./routes/index")
 const cors = require("cors");
 
 var corsOptions = {
-    origin: 'http://cs-diploma-notebook.vercel.app',
+    origin: 'https://cs-diploma-notebook.vercel.app',
     optionsSuccessStatus: 200
   }
 
