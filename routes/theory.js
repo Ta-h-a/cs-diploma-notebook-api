@@ -1,5 +1,5 @@
 const express = require("express")
-const theoryData = require("../public/theory");
+const theoryData = require("../model/theory");
 
 const router = express.Router();
 

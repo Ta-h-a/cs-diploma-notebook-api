@@ -1,5 +1,5 @@
 const express = require("express")
-const semesterData = require("./../public/semester")
+const semesterData = require("./../model/semester")
 
 const router = express.Router();
 

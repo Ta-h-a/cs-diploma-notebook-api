@@ -45,7 +45,12 @@ const semesters =
                     "title":"DSA with Python",
                     "name":"data-structures-and-algorithms-with-python",
                     "URL": "practical/data-structures-and-algorithms-with-python"
-                }
+                },
+                // {
+                //     "title":"Operating Systems",
+                //     "name":"data-structures-and-algorithms-with-python",
+                //     "URL": "practical/data-structures-and-algorithms-with-python"
+                // }
             ]
         }
     ]

@@ -1,5 +1,5 @@
 const express = require("express")
-const practicalData = require("./../public/practical")
+const practicalData = require("../model/practical")
 const experiment = require("./experiment")
 
 const router = express.Router();
