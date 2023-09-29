@@ -152,6 +152,55 @@ const data = [
                     }
                 ]
             },
+            {
+                // "id": 1,
+                "name": "experiment-09",
+                "title":"Experiment 09",
+                // Sections because a single experiment can have sub experiments
+                "sections": [   
+                    {
+                        "tag": "A",
+                        "name": "Program to  demonstrate  recursive operations",
+                        "URL": "practical/experiment/program-to-demonstrate-recursive-operations"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Implement solution  for Towers of Hanoi",
+                        "URL": "practical/experiment/implement-solution-for-tower-of-hanoi"
+                    }
+                ]
+            },
+            {
+                // "id": 1,
+                "name": "experiment-10",
+                "title":"Experiment 10",
+                // Sections because a single experiment can have sub experiments
+                "sections": [   
+                    {
+                        "tag": "A",
+                        "name": "Implement Queue",
+                        "URL": "practical/experiment/implement-queue"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Implement priority queue",
+                        "URL": "practical/experiment/implement-priority-queue"
+                    }
+                ]
+            },
+            {
+                // "id": 1,
+                "name": "experiment-11",
+                "title":"Experiment 11",
+                // Sections because a single experiment can have sub experiments
+                "sections": [   
+                    {
+                        "tag": "A",
+                        "name": "Implement Binary search tree and its operations using list",
+                        "URL": "practical/experiment/implement-binary-search-tree-and-its-operations-using-list"
+                    }
+                ]
+            },
         ]
     }
 ]

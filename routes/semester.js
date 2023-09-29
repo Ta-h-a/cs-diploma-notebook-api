@@ -3,6 +3,7 @@ const semesterData = require("./../model/semester")
 
 const router = express.Router();
 
+
 router.get(
     "/:id",
     (req,res,next)=>{

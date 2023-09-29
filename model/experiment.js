@@ -1367,7 +1367,333 @@ const experimentData = [
         ]
 
     },
+    {
+        "name": "program-to-demonstrate-recursive-operations",
+        "title": "Program to  demonstrate  recursive operations",
+        "code": `
+
+    def fact(n):
+        if (n==0 or n==1):
+            return 1
+        return n * fact(n-1)
     
+    n = int(input("Enter the value: "))
+    res = fact(n)
+    print("Factorial of",n,"is",res)
+    
+        `,
+        "type": "Lab",
+        "description":`
+        The code implements a recursive function to calculate the factorial of a number using the concept of repeated multiplication. It takes user input, performs the factorial calculation, and displays the result.
+        `,
+        "explanation":[
+            "Code Explanation: Calculating Factorial Recursively",
+  "fact Function",
+  "The fact function calculates the factorial of a given number n recursively. It uses the concept of a recursive function where the factorial of n is defined as the product of n and the factorial of n-1.",
+  "Base Case",
+  "The base case of the recursive function is defined when n is 0 or 1. In this case, the function returns 1 since the factorial of 0 and 1 is 1.",
+  "Recursive Step",
+  "For n greater than 1, the function recursively calls itself with the argument n-1 and multiplies it by n. This recursive step continues until the base case is reached.",
+  "Returning the Result",
+  "The result of the factorial calculation is returned as the output of the function.",
+  "Main Code",
+  "In the main code, an integer n is taken as input from the user, representing the value for which the factorial will be calculated.",
+  "The fact function is called with n as an argument, and the result is assigned to the variable res.",
+  "Finally, the calculated factorial value is displayed using the print function.",
+  "This code allows you to calculate the factorial of a given number using a recursive approach. It breaks down the factorial calculation into simpler subproblems until it reaches the base case."
+],
+        "ytLink": "https://www.youtube.com/embed/gfhtaP5Wq7M",
+        "sources": [
+            {
+                "name": "Geeks For Geeks",
+                "url": "https://www.geeksforgeeks.org/java-program-to-find-factorial-of-a-number-recursively"
+            },
+            {
+                "name": "Programiz",
+                "url": "https://www.programiz.com/python-programming/examples/factorial-recursion"
+            }
+        ]
+
+    },
+    {
+        "name": "implement-solution-for-tower-of-hanoi",
+        "title": "Implement solution  for Tower of Hanoi",
+        "code": `
+
+        def towerOfHanoi(n, source, auxiliary, destination):
+            if n == 1:
+                print(f"Move disk 1 from source {source} to destination {destination}")
+                return
+            towerOfHanoi(n - 1, source, destination, auxiliary)
+            print(f"Move disk {n} from source {source} to destination {destination}")
+            towerOfHanoi(n - 1, auxiliary, source, destination)
+    
+        n = int(input("Enter the disk number: "))
+        towerOfHanoi(n, 'A', 'B', 'C')
+            
+        `,
+        "type": "Lab",
+        "description":`
+        The code implements the Tower of Hanoi puzzle solution using a recursive algorithm. It takes the number of disks as input, recursively solves the subproblems to move the disks, and prints the sequence of moves required to solve the puzzle.
+        `,
+        "images": [
+            "https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/07/TV-Tower-of-Hanoi-normal-image01.jpg"
+        ],
+        "explanation":[
+            "The Tower of Hanoi problem can be solved using a recursive approach.",
+  "The algorithm can be summarized as follows:",
+  "Define the function towerOfHanoi(n, source, auxiliary, destination): This function takes four parameters - n (number of disks), source (the rod where the disks are initially placed), auxiliary (the spare rod), and destination (the rod where the disks need to be moved). The purpose of this function is to print the sequence of moves required to solve the Tower of Hanoi problem.",
+  "Check the base case: If there is only one disk (n == 1), move it directly from the source rod to the destination rod and print the move. Return from the function.",
+  "Recursively solve the subproblems: If there are more than one disk (n > 1), recursively solve the subproblem of moving n-1 disks from the source rod to the auxiliary rod, using the destination rod as the spare rod. Print the move. Recursively solve the remaining subproblem of moving n-1 disks from the auxiliary rod to the destination rod, using the source rod as the spare rod.",
+  "Code Explanation",
+  "The provided code implements the Tower of Hanoi algorithm:",
+  "def towerOfHanoi(n, source, auxiliary, destination): If n == 1: print(f\"Move disk 1 from source {source} to destination {destination}\") return towerOfHanoi(n - 1, source, destination, auxiliary) print(f\"Move disk {n} from source {source} to destination {destination}\") towerOfHanoi(n - 1, auxiliary, source, destination) n = int(input(\"Enter the disk number: \")) towerOfHanoi(n, 'A', 'B', 'C')",
+  "The code defines the function towerOfHanoi that takes the parameters n, source, auxiliary, and destination. It follows the recursive approach to solve the Tower of Hanoi problem.",
+  "The base case is checked using n == 1. If true, it means there is only one disk remaining, so it is moved directly from the source rod to the destination rod. The move is printed.",
+  "If n is greater than 1, the function makes recursive calls to solve the subproblems. It first moves n-1 disks from the source rod to the auxiliary rod using the destination rod as the spare rod. The move is printed. Then it recursively moves the remaining n-1 disks from the auxiliary rod to the destination rod using the source rod as the spare rod.",
+  "The user is prompted to enter the number of disks n and the towerOfHanoi function is called with the provided arguments to solve the Tower of Hanoi problem."
+],
+        "ytLink": "https://www.youtube.com/embed/YstLjLCGmgg",
+        "sources": [
+            {
+                "name": "Semantics Scholar",
+                "url": "https://www.semanticscholar.org/paper/The-Tower-of-Hanoi-Myths-and-Maths-Hinz-Klav%C5%BEar/98b4202d35d1f42564b9f2220ffe614d832b0168"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/"
+            }
+        ]
+
+    },
+    {
+        "name": "implement-queue",
+        "title": "Implement Queue",
+        "code": `
+        # Queue
+        queue = []
+        
+        def enqueue():
+            element = input("Enter the element: ")
+            queue.append(element)
+            print("Element is added to queue")
+            print(queue)
+        
+        def dequeue():
+            if not queue:
+                print("Queue is empty")
+            else:
+                e = queue.pop(0)
+                print("Element removed ", e)
+                print(queue)
+        
+        def display():
+            print(queue)
+        
+        while True:
+            print("Select the operation: 1. Add  2. Remove  3. Show  4. Quit")
+            choice = int(input())
+            if choice == 1:
+                enqueue()
+            elif choice == 2:
+                dequeue()
+            elif choice == 3:
+                display()
+            elif choice == 4:
+                print("Quit")
+                break
+            else:
+                print("Enter the correct operation")
+            
+        `,
+        "type": "Lab",
+        "description":`
+        The code implements queue operations using a list in Python, allowing users to add elements, remove elements, and display the current contents of the queue interactively.
+        `,
+        "explanation":[
+            "The provided code implements a queue data structure using a list in Python. It offers the following operations:",
+            "enqueue(): This operation adds an element to the end of the queue. It prompts the user to enter an element, appends it to the queue list, and displays a message along with the updated queue.",
+            "dequeue(): This operation removes an element from the front of the queue. If the queue is empty, it displays a message. Otherwise, it removes the element at index 0 from the queue list using pop(0), displays the removed element, and shows the updated queue.",
+            "display(): This operation displays the current contents of the queue by printing the queue list.",
+            "Code Explanation",
+            "The code defines the operations and implements a menu-based loop to interact with the queue:",
+            "queue = []",
+            "def enqueue(): element = input(\"Enter the element: \") queue.append(element) print(\"Element is added to the queue\") print(queue)",
+            "def dequeue(): if not queue: print(\"Queue is empty\") else: e = queue.pop(0) print(\"Element removed:\", e) print(queue)",
+            "def display(): print(queue)",
+            "while True: print(\"Select the operation: 1. Add  2. Remove  3. Show  4. Quit\") choice = int(input()) if choice == 1: enqueue() elif choice == 2: dequeue() elif choice == 3: display() elif choice == 4: print(\"Quit\") break else: print(\"Enter the correct operation\")",
+            "The code initializes an empty list called queue to store the elements.",
+            "The enqueue() function prompts the user to enter an element, appends it to the queue list, and displays a message along with the updated queue.",
+            "The dequeue() function checks if the queue list is empty. If it is, it prints a message indicating that the queue is empty. Otherwise, it removes the element at index 0 using pop(0), stores it in the variable e, prints the removed element, and shows the updated queue.",
+            "The display() function simply prints the queue list to display the current contents.",
+            "The program enters an infinite loop using while True. It displays a menu to the user with the available operations: Add, Remove, Show, and Quit. It prompts the user to enter a choice (1-4). Based on the user's choice, it calls the corresponding operation function (enqueue(), dequeue(), display()), or exits the loop if the choice is 4 (Quit). If the choice is not valid, it displays a message indicating that the user should enter the correct operation.",
+            "This code allows users to interactively perform queue operations and see the resulting changes in the queue."
+],
+        "ytLink": "https://www.youtube.com/embed/zp6pBNbUB2U",
+        "sources": [
+            {
+                "name": "Simpli learn",
+                "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/queue-in-data-structure"
+            },
+            {
+                "name": "Programiz",
+                "url": "https://www.programiz.com/dsa/queue/"
+            }
+        ]
+
+    },
+    {
+        "name": "implement-priority-queue",
+        "title": "Implement Priority Queue",
+        "code": `
+
+        import queue
+        q = queue.PriorityQueue()
+        q.put(10)
+        q.put(60)
+        q.put(20)
+        q.put(110)
+        q.put(40)
+        print(q.get())
+        print(q.get())
+        print(q.get())
+        print(q.get())
+        print(q.get())
+            
+        `,
+        "type": "Lab",
+        "description":`
+        The code utilizes the PriorityQueue class from the queue module to implement a priority queue. Elements are added to the queue based on their priority and retrieved in the order of their priority.
+        `,
+        "explanation":[
+            "Introduction",
+  "The given code demonstrates the use of the PriorityQueue class from the queue module in Python. A priority queue is a data structure where each element has a priority associated with it. Elements are retrieved in the order of their priority, with the highest priority element being dequeued first.",
+  "Code Explanation",
+  "The code provides an example of using a priority queue:",
+  "import queue",
+  "q = queue.PriorityQueue()",
+  "q.put(10)",
+  "q.put(60)",
+  "q.put(20)",
+  "q.put(110)",
+  "q.put(40)",
+  "print(q.get())",
+  "print(q.get())",
+  "print(q.get())",
+  "print(q.get())",
+  "print(q.get())",
+  "The code begins by importing the queue module, which provides the PriorityQueue class for implementing a priority queue.",
+  "A priority queue object q is created using the PriorityQueue() constructor.",
+  "Elements are added to the priority queue using the put() method, which inserts elements based on their priority.",
+  "The elements are retrieved from the priority queue using the get() method, which dequeues elements in the order of their priority. The retrieved elements are printed using the print() function.",
+  "This code demonstrates the usage of the PriorityQueue class to implement a priority queue and retrieve elements based on their priority."
+],
+        "ytLink": "https://www.youtube.com/embed/m9SVfOYTaBQ",
+        "sources": [
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/priority-queue-set-1-introduction/"
+            },
+            {
+                "name": "Oracle",
+                "url": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html"
+            }
+        ]
+    },
+    {
+        "name": "implement-binary-search-tree-and-its-operations-using-list",
+        "title": "Implement Binary search tree and its operations using list",
+        "code": `
+
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.left = None
+            self.right = None
+                
+        def inorder(root):
+            if root:
+                inorder(root.left)
+                print(str(root.data) + "->", end='')
+                inorder(root.right)
+        
+        def insert(node, data):
+            if node is None:
+                return Node(data)
+            if data < node.data:
+                node.left = insert(node.left, data)
+            else:
+                node.right = insert(node.right, data)
+            return node
+        
+        def delete_node(root, key):
+            if root is None:
+                return root
+        
+            if key < root.data:
+                root.left = delete_node(root.left, key)
+            elif key > root.data:
+                root.right = delete_node(root.right, key)
+            else:
+                if not root.left:
+                    return root.right
+                elif not root.right:
+                    return root.left
+                temp = minValueNode(root.right)
+                root.data = temp.data
+                root.right = delete_node(root.right, temp.data)
+        
+            return root
+    
+    root = None
+    data = [8, 3, 9, 18, 5, 13, 6]
+    root = insert(root, data[0])
+    [root := insert(root, num) for num in data[1:]]
+    
+    print("Inorder traversal: ", end='')
+    inorder(root)
+    
+    print("After delete: ")
+    root = delete_node(root, 13)
+    print("Inorder traversal: ", end='')
+    inorder(root)
+    
+        `,
+        "type": "Lab",
+        "description":`
+        The code illustrates the operations of insertion, deletion, and inorder traversal on a Binary Search Tree (BST) implemented using the Node class. The BST maintains the property that the left child of a node has a smaller value, and the right child has a larger value.
+        `,
+        "explanation":[
+            "The given code demonstrates various operations on a Binary Search Tree (BST) implemented using the Node class. BST is a binary tree where the left child of a node has a smaller value, and the right child has a larger value. The code showcases the insertion of nodes into the BST, deletion of a node, and the inorder traversal of the tree.",
+            "Code Explanation",
+            "Node Class",
+            "The code begins with the definition of the Node class, which represents a node in the BST. Each node contains data, a left child reference, and a right child reference.",
+            "Inorder Traversal",
+            "The inorder function performs an inorder traversal of the BST and prints the node values in ascending order. It takes a node as a parameter and recursively traverses the left subtree, visits the current node, and then recursively traverses the right subtree.",
+            "Insertion Operation",
+            "The insert function inserts a new node into the BST. It takes a node and data as parameters. If the given node is None, indicating an empty subtree, a new node with the given data is created and returned. If the data is less than the node's data, the function is called recursively on the left child to insert the data. Otherwise, the function is called recursively on the right child. The updated node reference is returned.",
+            "Deletion Operation",
+            "The delete_node function deletes a node with a given key from the BST. It takes the root node and the key to be deleted as parameters. If the root is None, indicating an empty tree, the function returns None. If the key is less than the root's data, the function is called recursively on the left subtree. If the key is greater than the root's data, the function is called recursively on the right subtree. If the key matches the root's data, the following steps are performed:",
+            "If the root has no left child, the right child replaces the root.",
+            "If the root has no right child, the left child replaces the root.",
+            "If the root has both left and right children, the minimum value node from the right subtree (smallest value greater than the root) replaces the root. The minimum value node is found by traversing the leftmost node in the right subtree. Its data is copied to the root, and then the delete operation is performed on the right subtree to remove the duplicate node.",
+            "BST Creation and Operations",
+            "The code creates an empty root node and a list of data values to be inserted into the BST. Using a list comprehension, each data value is inserted into the BST by calling the insert function. The inorder traversal of the tree is printed before and after deleting a specific node (13 in this case) using the inorder function and the delete_node function.",
+            "Conclusion",
+            "The given code demonstrates the operations performed on a Binary Search Tree (BST) using the Node class. It showcases the insertion of nodes, deletion of a node, and the inorder traversal of the tree."
+],
+        "ytLink": "https://www.youtube.com/embed/cySVml6e_Fc",
+        "sources": [
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/what-is-binary-search-tree/"
+            },
+            {
+                "name": "Baeldung",
+                "url": "https://www.baeldung.com/cs/binary-search-trees"
+            }
+        ]
+    },
 ]
 
 module.exports = experimentData;

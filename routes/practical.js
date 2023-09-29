@@ -1,9 +1,12 @@
 const express = require("express")
 const practicalData = require("../model/practical")
 const experiment = require("./experiment")
+const index = require('../model/index')
 
 const router = express.Router();
 router.use("/experiment/",experiment)
+
+
 
 router.get(
     "/:name",
