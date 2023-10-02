@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var index = require('../model/index')
-const ejs = require("ejs");
 require('dotenv').config();
 const fs = require('fs/promises');
 const path = require('path');
