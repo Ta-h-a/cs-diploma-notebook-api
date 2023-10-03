@@ -8,8 +8,8 @@ const staff = require("./routes/staff.js")
 var bodyParser = require('body-parser')
 
 var corsOptions = {
-    origin: 'https://cs-diploma-notebook.vercel.app',
-    // origin: 'http://localhost:5173',
+    // origin: 'https://cs-diploma-notebook.vercel.app',
+    origin: 'http://localhost:5173',
     optionsSuccessStatus: 200
   }
 
