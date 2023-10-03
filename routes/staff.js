@@ -24,13 +24,15 @@ async function getStatus(){
 }
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
+router.post('/', async function(req, res, next) {
   // console.log(req.body.username);
   if (req.body.username === process.env.MLBP_USERNAME && req.body.password === process.env.MLBP_PASSWORD){
+    const state = await getStatus()
+    console.log(state);
     res.send(
       {
         logged: true,
-        currentState: getStatus()
+        currentState: state
       }
       );
     }else{
