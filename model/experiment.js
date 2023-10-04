@@ -1694,6 +1694,174 @@ const experimentData = [
             }
         ]
     },
+    {
+        "name": "implementations-of-bfs",
+        "title": "Implementations of  BFS",
+        "code": `
+        import collections
+        def bfs(graph,root):
+            visited,queue = set(),collections.deque([root])
+            visited.add(root)
+            while queue:
+                vertex = queue.popleft()
+                print(str(vertex)+" ",end="")
+                for neighbour in graph[vertex]:
+                    if neighbour not in visited:
+                        visited.add(neighbour)
+                        queue.append(neighbour)
+        
+        if __name__ == '__main__':
+            graph = {0:[1,2],1:[2],2:[3],3:[1,2]}
+            print("Following is Breadth First Traversal")
+            bfs(graph,0)      
+    
+        `,
+        "type": "Lab",
+        "description":`
+        The code showcases the Breadth-First Search (BFS) algorithm for traversing a graph in breadth-first order, starting from a given root vertex. It uses a queue to keep track of the vertices to visit next and maintains a visited set to track the visited vertices during the traversal.
+        `,
+        "explanation":[
+            "Code Explanation: Breadth-First Search (BFS)",
+            "Introduction",
+            "The provided code demonstrates the Breadth-First Search (BFS) algorithm for traversing a graph. BFS explores all the vertices of a graph in breadth-first order, starting from a given root vertex. It uses a queue to keep track of the vertices to visit next.",
+            "Code Explanation",
+            "BFS Function",
+            "The bfs function takes two parameters: graph (the graph represented as an adjacency list) and root (the starting vertex for the BFS traversal).",
+            "Initialization",
+            "Inside the bfs function, a set called visited is created to keep track of the visited vertices. A deque called queue is initialized with the root vertex. The root vertex is added to both the visited set and the queue.",
+            "BFS Traversal",
+            "The main BFS traversal begins with a while loop that continues until the queue is empty. Inside the loop, the popleft method is used to retrieve and remove the vertex at the front of the queue.",
+            "Visiting a Vertex",
+            "The visited vertex is printed using print(str(vertex)+\" \", end=\"\"). This displays the vertex value followed by a space, allowing the traversal order to be shown on a single line.",
+            "Exploring Neighbors",
+            "The for loop iterates over each neighbor of the current vertex, accessed through the graph[vertex] adjacency list. If a neighbor has not been visited, it is added to the visited set and also added to the queue. This ensures that unvisited neighbors will be visited in subsequent iterations.",
+            "Graph Representation",
+            "After the bfs function definition, a graph is defined as a dictionary. Each key represents a vertex, and the corresponding value is a list of neighbors for that vertex.",
+            "Main Function",
+            "Finally, the main section of the code checks if the module is being run directly (if __name__ == '__main__':). Inside this block, the graph is defined, and the bfs function is called with the graph and the starting vertex 0. The BFS traversal is then printed as \"Following is Breadth First Traversal\".",
+            "Conclusion",
+            "The given code demonstrates the Breadth-First Search (BFS) algorithm using a graph represented as an adjacency list. It performs a BFS traversal starting from a given root vertex, visiting all vertices in breadth-first order. The code initializes a visited set and a queue, explores neighbors of vertices, and prints the traversal order."
+          ],
+        "ytLink": "https://www.youtube.com/embed/pcKY4hjDrxk",
+        "sources": [
+            {
+                "name": "Khan Academy",
+                "url": "https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/breadth-first-search-and-its-uses"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/"
+            }
+        ]
+    },
+    {
+        "name": "implementation-of-dfs",
+        "title": "Implementation of DFS",
+        "code": `
+        def dfs(graph,start,visited=None):
+            if visited is None:
+                visited = set()
+            visited.add(start)
+            print(start)
+            for next in graph[start]-visited:
+                dfs(graph,next,visited)
+            return visited
+
+        graph = {'0':set(['1','2']),
+                '1':set(['2']),
+                '2':set(['3']),
+                '3':set(['1','2'])}
+
+        print("Following is Depth First Traversal: ")
+        print(dfs(graph,'0'))
+
+        `,
+        "type": "Lab",
+        "description":`
+        The code showcases the Depth-First Search (DFS) algorithm for traversing a graph in depth-first order, starting from a given starting vertex. It uses recursion to visit the neighbors of each vertex and maintains a visited set to track the visited vertices during the traversal.
+        `,
+        "explanation":[
+            "Code Explanation: Depth-First Search (DFS)",
+            "Introduction",
+            "The provided code demonstrates the Depth-First Search (DFS) algorithm for traversing a graph. DFS explores all the vertices of a graph in depth-first order, starting from a given starting vertex. It uses recursion to visit the neighbors of each vertex.",
+            "Code Explanation",
+            "DFS Function",
+            "The dfs function takes three parameters: graph (the graph represented as an adjacency list), start (the starting vertex for the DFS traversal), and visited (a set to keep track of the visited vertices).",
+            "Visited Set Initialization",
+            "Inside the dfs function, an if statement checks if the visited set is None. If it is None, a new set is created and assigned to visited. This ensures that the visited set is initialized properly.",
+            "Visiting a Vertex",
+            "The start vertex is added to the visited set using visited.add(start). This marks the current vertex as visited. Then, the value of the current vertex is printed using print(start).",
+            "Exploring Neighbors",
+            "The for loop iterates over each neighbor of the current vertex. It accesses the neighbors through the graph[start] adjacency list. To find the unvisited neighbors, the set difference operation (-) is used between the neighbor set and the visited set (graph[start] - visited). This ensures that only unvisited neighbors are visited.",
+            "Recursive Call",
+            "For each unvisited neighbor, the dfs function is recursively called with the neighbor as the new start vertex and the visited set. This allows the algorithm to explore the neighbors in depth-first order.",
+            "Graph Representation",
+            "After the dfs function definition, a graph is defined as a dictionary. Each key represents a vertex, and the corresponding value is a set of neighbors for that vertex.",
+            "Main Function",
+            "Finally, the main section of the code defines the graph and calls the dfs function with the graph and the starting vertex '0'. The DFS traversal is then printed as \"Following is Depth First Traversal\".",
+            "Conclusion",
+            "The given code demonstrates the Depth-First Search (DFS) algorithm using a graph represented as an adjacency list. It performs a DFS traversal starting from a given starting vertex, visiting all vertices in depth-first order. The code initializes a visited set, visits each vertex, recursively explores the neighbors, and prints the traversal order."
+],
+        "ytLink": "https://www.youtube.com/embed/Y40bRyPQQr0",
+        "sources": [
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://brilliant.org/wiki/depth-first-search-dfs/"
+            },
+            {
+                "name": "Baeldung",
+                "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/dfs-algorithm"
+            }
+        ]
+    },
+    {
+        "name": "implement-hash-functions",
+        "title": "Implement Hash functions",
+        "code": `
+    class Student:
+        def __init__(self,name,email):
+            self.name = name
+            self.email = email
+
+    student = Student("Arun","arun@abcom")
+    # Calling function
+    result = hash(student)
+    # Displaying result
+    print("Hash Value is",result)
+
+        `,
+        "type": "Lab",
+        "description":`
+        The code demonstrates the usage of the hash() function on an instance of the Student class to generate a unique hash value, which can be used for indexing, uniqueness checks, and data integrity validation.
+        `,
+        "explanation":[
+            "Code Explanation: Student Class and Hashing",
+            "Introduction",
+            "The provided code demonstrates the usage of the hash() function on an instance of the Student class. The hash() function is used to generate a hash value for an object, which can be useful for various purposes such as indexing, uniqueness checks, and data integrity validation.",
+            "Code Explanation",
+            "Student Class",
+            "The Student class represents a student and has two attributes: name and email. The class is defined with an __init__ method, which is the constructor that initializes the name and email attributes with the values passed as arguments.",
+            "Creating an Instance",
+            "An instance of the Student class is created with the name \"Arun\" and email \"arun@abcom\" using the statement student = Student(\"Arun\", \"arun@abcom\"). This instance represents a student with the specified name and email.",
+            "Hashing the Object",
+            "The hash() function is called on the student object using the statement result = hash(student). This function calculates and returns a hash value for the object. The hash value is an integer that is generated based on the object's contents and is unique for each distinct object (in most cases).",
+            "Displaying the Result",
+            "The generated hash value is stored in the result variable. The statement print(\"Hash Value is\", result) is used to display the hash value on the console.",
+            "Conclusion",
+            "The given code creates an instance of the Student class, calculates the hash value for that object using the hash() function, and displays the resulting hash value. Hashing objects can be useful for various purposes, such as indexing objects in data structures, ensuring object uniqueness, and verifying the integrity of data."
+],
+        "ytLink": "https://www.youtube.com/embed/54Qh85vySEg",
+        "sources": [
+            {
+                "name": "Toppr",
+                "url": "https://www.toppr.com/guides/python-guide/references/methods-and-functions/methods/built-in/hash/python-hash/"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/python-hash-method/"
+            }
+        ]
+    },
 ]
 
 module.exports = experimentData;

@@ -201,6 +201,37 @@ const data = [
                     }
                 ]
             },
+            {
+                // "id": 1,
+                "name": "experiment-12",
+                "title":"Experiment 12",
+                // Sections because a single experiment can have sub experiments
+                "sections": [   
+                    {
+                        "tag": "A",
+                        "name": "Implementations of  BFS",
+                        "URL": "practical/experiment/implementations-of-bfs"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Implementation of DFS",
+                        "URL": "practical/experiment/implementation-of-dfs"
+                    }
+                ]
+            },
+            {
+                // "id": 1,
+                "name": "experiment-13",
+                "title":"Experiment 13",
+                // Sections because a single experiment can have sub experiments
+                "sections": [   
+                    {
+                        "tag": "A",
+                        "name": "Implement Hash functions",
+                        "URL": "practical/experiment/implement-hash-functions"
+                    },
+                ]
+            },
         ]
     }
 ]
