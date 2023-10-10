@@ -1,6 +1,8 @@
 const experimentData = [
+    // DSA with Python
     {
         "name": "python-program-to-use-and-demonstrate-basic-data-structures",
+        "language": "python",
         "title": "Python program to Use and demonstrate basic data structures",
         "type": "Lab",
         "code":`
@@ -90,6 +92,7 @@ const experimentData = [
     },
     {
         "name": "implement-an-ADT-with-all-its-operations",
+        "language": "python",
         "title": "Implement an ADT with all its Operations",
         "code": `
     stack = []
@@ -155,6 +158,7 @@ const experimentData = [
     },
     {
         "name": "implement-an-adt-and-compute-space-and-time-complexities",
+        "language": "python",
         "title": "Implement an ADT and Compute space and time complexities.",
         "code": `
         
@@ -237,6 +241,7 @@ const experimentData = [
     },
     {
         "name": "implement-linear-search-compute-space-and-time-complexities",
+        "language": "python",
         "title": "Implement Linear  Search compute  space and time  complexities.",
         "code": `
         # Main Code
@@ -335,6 +340,7 @@ const experimentData = [
     },
     {
         "name": "implement-bubble-selection-insertion-sorting-algorithms-compute-space-and-time-complexities-plot-graph-using-asymptomatic-notations",
+        "language": "python",
         "title": "Implement Bubble, Selection, insertion sorting algorithms compute space and time complexities, plot graph using asymptomatic notations.",
         "code": `
 
@@ -509,6 +515,7 @@ const experimentData = [
     },
     {
         "name": "implement-binary-search-using-recursion-compute-space-and-time-complexities",
+        "language": "python",
         "title": "Implement Binary Search using recursion Compute space and time complexities.",
         "code": `
 
@@ -603,6 +610,7 @@ const experimentData = [
     },
     {
         "name": "implement-merge-and-quick-sorting-algorithms-compute-space-and-time-complexities",
+        "language": "python",
         "title": "Implement Merge and quick sorting algorithms compute space and time complexities",
         "code": `
 
@@ -752,6 +760,7 @@ const experimentData = [
     },
     {
         "name": "implement-fibonacci-sequence-with-dynamic-programming",
+        "language": "python",
         "title": "Implement Fibonacci sequence with dynamic programming.",
         "code": `
 
@@ -815,6 +824,7 @@ const experimentData = [
     },
     {
         "name": "implement-singly-linked-list",
+        "language": "python",
         "title": "Implement Singly linked list (Traversing the Nodes, searching for a Node, Prepending Nodes, Removing Nodes)",
         "code": `
         # Node class
@@ -913,6 +923,7 @@ const experimentData = [
     },
     {
         "name": "implement-linked-list-iterators",
+        "language": "python",
         "title": "Implement linked list Iterators",
         "code": `
 
@@ -971,6 +982,7 @@ const experimentData = [
 
     },
     {
+        "language": "python",
         "name": "implement-dll",
         "title": "Implement DLL",
         "code": `
@@ -1074,6 +1086,7 @@ const experimentData = [
     },
     {
         "name": "implement-cdll",
+        "language": "python",
         "title": "Implement CDLL",
         "code": `
 
@@ -1202,6 +1215,7 @@ const experimentData = [
     },
     {
         "name": "implement-stack-data-structure",
+        "language": "python",
         "title": "Implement Stack Data Structure",
         "code": `
     class Stack:
@@ -1291,6 +1305,7 @@ const experimentData = [
     },
     {
         "name": "implement-bracket-matching-using-stack",
+        "language": "python",
         "title": "Implement Bracket matching using stack.",
         "code": `
 
@@ -1369,6 +1384,7 @@ const experimentData = [
     },
     {
         "name": "program-to-demonstrate-recursive-operations",
+        "language": "python",
         "title": "Program to  demonstrate  recursive operations",
         "code": `
 
@@ -1417,6 +1433,7 @@ const experimentData = [
     },
     {
         "name": "implement-solution-for-tower-of-hanoi",
+        "language": "python",
         "title": "Implement solution  for Tower of Hanoi",
         "code": `
 
@@ -1467,6 +1484,7 @@ const experimentData = [
 
     },
     {
+        "language": "python",
         "name": "implement-queue",
         "title": "Implement Queue",
         "code": `
@@ -1544,6 +1562,7 @@ const experimentData = [
     },
     {
         "name": "implement-priority-queue",
+        "language": "python",
         "title": "Implement Priority Queue",
         "code": `
 
@@ -1602,6 +1621,7 @@ const experimentData = [
     },
     {
         "name": "implement-binary-search-tree-and-its-operations-using-list",
+        "language": "python",
         "title": "Implement Binary search tree and its operations using list",
         "code": `
 
@@ -1696,6 +1716,7 @@ const experimentData = [
     },
     {
         "name": "implementations-of-bfs",
+        "language": "python",
         "title": "Implementations of  BFS",
         "code": `
         import collections
@@ -1756,6 +1777,7 @@ const experimentData = [
     },
     {
         "name": "implementation-of-dfs",
+        "language": "python",
         "title": "Implementation of DFS",
         "code": `
         def dfs(graph,start,visited=None):
@@ -1816,6 +1838,7 @@ const experimentData = [
     },
     {
         "name": "implement-hash-functions",
+        "language": "python",
         "title": "Implement Hash functions",
         "code": `
     class Student:
@@ -1859,6 +1882,1531 @@ const experimentData = [
             {
                 "name": "Geeks for Geeks",
                 "url": "https://www.geeksforgeeks.org/python-hash-method/"
+            }
+        ]
+    },
+    // IT Skills
+
+    // Experiment 01
+    // A
+    {
+        "name": "write-an-algorithm-to-add-two-numbers",
+        "title": "Write an Algorithm to add two numbers",
+        "language": "plaintext",
+        "code": `
+Step 1 → START
+
+Step 2 → Declare three variables n1, n2 and SUM
+
+Step 3 → Read (input) two numbers and store in n1 & n2 respectively 
+
+Step 4 → Add n1&n2 and store result in SUM. i.e. SUM = n1 + n2 
+
+Step 5 → Display (output) result i.e. SUM
+
+Step 6 → STOP
+        
+        `,
+        "type": "Theory",
+        "description":`
+        This algorithm is a simple set of instructions to add two numbers. It begins by declaring three containers (variables) to store values - n1, n2, and SUM. It then asks the user for two numbers, adds them together, and displays the result. Finally, it signals the end of the process.
+        `,
+        "explanation":[
+            "Step 1: START. This marks the beginning of the algorithm.",
+            "Step 2: Declare three variables n1, n2, and SUM. These are containers to hold values.",
+            "Step 3: Read (input) two numbers and store in n1 & n2 respectively. Get numbers from the user and store them in n1 and n2.",
+            "Step 4: Add n1 and n2 and store the result in SUM. Perform addition with the numbers in n1 and n2, and store the result in SUM.",
+            "Step 5: Display (output) the result, i.e., SUM. Show the result to the user.",
+            "Step 6: STOP. This marks the end of the algorithm."
+],
+        "ytLink": "https://www.youtube.com/embed/kiDD61FAaaI",
+        "sources": [
+            {
+                "name": "C Sharp",
+                "url": "https://www.csharp-console-examples.com/pseudocode-examples/pseudocode-to-add-two-numbers/"
+            },
+            {
+                "name": "Jakerpomperada",
+                "url": "https://jakerpomperada.blogspot.com/2019/10/sum-of-two-numbers-pseudocode-algorithm.html"
+            }
+        ]
+    },
+    // B
+    {
+        "name": "write-an-algorithm-to-subtract-two-numbers",
+        "title": "Write an Algorithm to subtract two numbers",
+        "language": "plaintext",
+        "code": `
+Step 1 → START
+
+Step 2 → Declare three variables n1, n2 and diff.
+
+Step 3 → Read (input) two numbers and store in n1 & n2 respectively 
+
+Step 4 → Subtract n1 & n2 and store result in diff i.e. diff = n1 - n2 
+
+Step 5 → Display (output) result i.e. diff
+
+Step 6 → STOP
+        `,
+        "type": "Theory",
+        "description":`
+        This algorithm is designed to subtract one number (n2) from another number (n1). It starts by declaring three containers (variables) to hold values: n1, n2, and diff. The user is prompted to input two numbers, which are stored in n1 and n2. The algorithm then subtracts n2 from n1 and stores the result in a variable called "diff". Finally, it displays the result of the subtraction (diff) to the user.
+        `,
+        "explanation":[
+            "Step 1: START. This marks the beginning of the algorithm.",
+            "Step 2: Declare three variables n1, n2, and diff. These are containers to hold values.",
+            "Step 3: Read (input) two numbers and store in n1 & n2 respectively. Get numbers from the user and store them in n1 and n2.",
+            "Step 4: Subtract n1 and n2 and store the result in diff. Perform subtraction with the numbers in n1 and n2, and store the result in diff.",
+            "Step 5: Display (output) the result, i.e., diff. Show the result to the user.",
+            "Step 6: STOP. This marks the end of the algorithm."
+],
+        // "ytLink": "https://www.youtube.com/embed/iNREA76O7Uw?si=MBMOagigmS8cbyJA",
+        // "sources": [
+        //     {
+        //         "name": "A Tech Daily",
+        //         "url": "https://www.atechdaily.com/posts/algorithm-and-flowchart-to-find-largest-of-three-numbers"
+        //     },
+        //     {
+        //         "name": "Programiz",
+        //         "url": "https://www.programiz.com/python-programming/examples/largest-number-three"
+        //     }
+        // ]
+        "ytLink": "https://www.youtube.com/embed/5XKftwEf_KU",
+        "sources": [
+            {
+                "name": "Python Guides",
+                "url": "https://pythonguides.com/subtract-two-numbers-in-python/#:~:text=Python%20program%20to%20subtract%20two%20number%20user%20input,result%20is%E2%80%9D%2Cc%29%20is%20used%20to%20get%20the%20output."
+            },
+            {
+                "name": "Coding broz",
+                "url": "https://www.codingbroz.com/c-program-to-subtract-two-numbers/"
+            }
+        ]
+    },
+    // C
+    {
+        // "name": "calculate-and-print-sum-of-n-numbers",
+        // "title": "Calculate	and	print sum of 'N' numbers",
+        "name": "write-an-algorithm-to-find-smallest-of-3-numbers",
+        "title": "Write an Algorithm to find smallest of 3 numbers",
+        "language": "plaintext",
+        "code": `
+Step 1 → START
+
+Step 2 → Declare four variables n1, n2, n3 and MIN.
+
+Step 3 → Read (input) three numbers and store in n1, n2 & n3 respectively 
+
+Step 4 → Let MIN = n1
+
+Step 5 → if (n2 < MIN) , then MIN = n2, else next step 
+
+Step 6 → if (n3 < MIN), then MIN = n3, else next step 
+
+Step 7 → Display (output) MIN as Smallest Number.
+
+Step 8 → STOP
+        `,
+        "type": "Theory",
+        "description":`
+        This algorithm is designed to find the smallest number among three input numbers. It begins by declaring four containers (variables) to hold values: n1, n2, n3, and MIN. The user is prompted to input three numbers, which are stored in n1, n2, and n3. The algorithm then compares these numbers to determine the smallest one, storing it in the MIN variable. Finally, it displays the smallest number (MIN) to the user.
+        `,
+        "explanation":[
+            "Step 1: START. This marks the beginning of the algorithm.",
+            "Step 2: Declare four variables n1, n2, n3, and MIN. These are containers to hold values.",
+            "Step 3: Read (input) three numbers and store in n1, n2, and n3 respectively. Get numbers from the user and store them in n1, n2, and n3.",
+            "Step 4: Let MIN = n1. Initialize MIN with the value of n1.",
+            "Step 5: Check if n2 is smaller than MIN. If yes, update MIN to be n2.",
+            "Step 6: Check if n3 is smaller than MIN. If yes, update MIN to be n3.",
+            "Step 7: Display (output) MIN as the Smallest Number. Show the smallest number (MIN) to the user.",
+            "Step 8: STOP. This marks the end of the algorithm."
+],
+        // "ytLink": "https://www.youtube.com/embed/fFqmBP2EbVY?si=I86Y5jpTcgnyrYvV",
+        // "sources": [
+        //     {
+        //         "name": "Geeks for Geeks",
+        //         "url": "https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/"
+        //     },
+        //     {
+        //         "name": "Python Guides",
+        //         "url": "https://pythonguides.com/python-program-to-find-sum-of-n-numbers/"
+        //     }
+        // ]
+        "ytLink": "https://www.youtube.com/embed/dgS_Lu3xBBU?si=jB_Z-on8NUjuwBUy",
+        "sources": [
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/program-to-find-the-smallest-element-among-three-elements/"
+            },
+            {
+                "name": "Brainly",
+                "url": "https://brainly.in/question/11318260"
+            }
+        ]
+    },
+    // D
+    {
+        "name": "write-an-algorithm-to-find-largest-of-3-numbers",
+        "title": "Write an Algorithm to find largest of 3 numbers",
+        "language": "plaintext",
+        "code": `
+Step 1 → START
+
+Step 2 → Declare four variables n1, n2, n3 and MAX.
+
+Step 3 → Read (input) three numbers and store in n1, n2 & n3 respectively 
+
+Step 4 → Let MAX = n1
+
+Step 5 → if (n2 >MAX) , then MAX = n2, else next step 
+
+Step 6 → if (n3 >MAX), then MAX = n3, else next step 
+
+Step 7 → Display (output) MAX as Largest Number.
+
+Step 8 → STOP
+        `,
+        "type": "Theory",
+        "description":`
+        This algorithm aims to find the largest number among three input numbers. It begins by declaring four containers (variables) to hold values: n1, n2, n3, and MAX. The user is prompted to input three numbers, which are stored in n1, n2, and n3. The algorithm then compares these numbers to determine the largest one, storing it in the MAX variable. Finally, it displays the largest number (MAX) to the user.
+        `,
+        "explanation":[
+            "Step 1: START. This marks the beginning of the algorithm.",
+            "Step 2: Declare four variables n1, n2, n3, and MAX. These are containers to hold values.",
+            "Step 3: Read (input) three numbers and store in n1, n2, and n3 respectively. Get numbers from the user and store them in n1, n2, and n3.",
+            "Step 4: Let MAX = n1. Initialize MAX with the value of n1.",
+            "Step 5: Check if n2 is larger than MAX. If yes, update MAX to be n2.",
+            "Step 6: Check if n3 is larger than MAX. If yes, update MAX to be n3.",
+            "Step 7: Display (output) MAX as the Largest Number. Show the largest number (MAX) to the user.",
+            "Step 8: STOP. This marks the end of the algorithm."
+],
+        // "ytLink": "https://www.youtube.com/embed/fFqmBP2EbVY?si=I86Y5jpTcgnyrYvV",
+        // "sources": [
+        //     {
+        //         "name": "Geeks for Geeks",
+        //         "url": "https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/"
+        //     },
+        //     {
+        //         "name": "Python Guides",
+        //         "url": "https://pythonguides.com/python-program-to-find-sum-of-n-numbers/"
+        //     }
+        // ]
+        "ytLink": "https://www.youtube.com/embed/OGDo9idPgfo?si=rr_cvI4jdQqK-Nq2",
+        "sources": [
+            {
+                "name": "Programiz",
+                "url": "https://www.programiz.com/python-programming/examples/largest-number-three/"
+            },
+            {
+                "name": "Code Project",
+                "url": "https://www.codeproject.com/articles/760587/how-to-find-the-largest-of-numbers"
+            }
+        ]
+    },
+    // E
+    {
+        "name": "write-an-algorithm-to-calculate-&-print-sum-of-n-numbers",
+        "title": "Write an Algorithm to Calculate & Print sum of N numbers",
+        "language": "plaintext",
+        "code": `
+Step 1 → START
+
+Step 2 → Declare three variables N, count, SUM
+
+Step 3 → Read (input) value of N
+
+Step 4 → Initialize count = 1 and SUM = 0
+
+Step 5 → if (count <=N) , then goto next step, else goto step 9 
+
+Step 6 → SUM = SUM + count
+
+Step 7 → count = count + 1
+
+Step 8 → go to step 5
+
+Step 9 → Display (output) the value of SUM. 
+
+Step 10 → STOP
+        `,
+        "type": "Theory",
+        "description":`
+        This algorithm is designed to calculate the sum of numbers starting from 1 up to a given value, N. It begins by declaring three containers (variables) to hold values: N, count, and SUM. The user is prompted to input a value for N. The algorithm then initializes count and SUM, followed by iterating through a loop, adding each count to the SUM. Once the loop is complete, it displays the total sum (SUM) to the user.
+        `,
+        "explanation":[
+            "Step 1: START. This marks the beginning of the algorithm.",
+            "Step 2: Declare three variables N, count, and SUM. These are containers to hold values.",
+            "Step 3: Read (input) value of N. Get a value from the user and store it in N.",
+            "Step 4: Initialize count = 1 and SUM = 0. Set the initial values of count and SUM.",
+            "Step 5: Check if count is less than or equal to N. If yes, proceed to the next step. If not, go to step 9.",
+            "Step 6: SUM = SUM + count. Increment SUM by the current value of count.",
+            "Step 7: Increment count by 1. Increase count for the next iteration.",
+            "Step 8: Go to step 5. Loop back to step 5 and repeat steps 5-7 until count is within the specified range.",
+            "Step 9: Display (output) the value of SUM. Show the total sum (SUM) to the user.",
+            "Step 10: STOP. This marks the end of the algorithm."
+],
+        "ytLink": "https://www.youtube.com/embed/fFqmBP2EbVY?si=I86Y5jpTcgnyrYvV",
+        "sources": [
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/"
+            },
+            {
+                "name": "Python Guides",
+                "url": "https://pythonguides.com/python-program-to-find-sum-of-n-numbers/"
+            }
+        ]
+    },
+
+    // Experiment 02
+    // A
+    {
+        "name": "design-a-flowchart-to-add-two-numbers",
+        "title": "Design a Flowchart to add two numbers",
+        "language": "plaintext",
+        "images":[
+            "https://i.imgur.com/kd6lAG2.png",
+        ]
+        ,
+        "type": "Theory",
+        "description":`
+        The flowchart starts with the "Start" symbol, initiating the algorithm. It then proceeds to declare three variables: n1, n2, and sum. The user inputs values for n1 and n2. Next, the algorithm calculates the sum of n1 and n2 using the operation sum = n1 + n2. The result is displayed to the user. Finally, the algorithm reaches the "Stop" symbol, signifying the end of the process.
+        `,
+        "explanation":[
+            "Start: The Start symbol (usually an oval or rounded rectangle) indicates the beginning of the process. It initiates the algorithm and sets things in motion.",
+            "Declare Variables: This step involves declaring the necessary variables for the program. In a flowchart, this is often represented by a parallelogram symbol, signifying input or output. Variables n1, n2, and sum are declared to store values.",
+            "Read Input: In the flowchart, reading input is typically represented by a parallelogram symbol. It's the process of taking input from an external source. Here, we read the values of n1 and n2, likely from the user.",
+            "Calculate Sum: Calculation steps are usually represented by rectangles in a flowchart. In this case, we calculate the sum of n1 and n2, performing the operation sum = n1 + n2.",
+            "Display Output: Displaying output is another action typically represented by a parallelogram symbol. It's the process of showing results to the user. Here, we display the value of sum to the user.",
+            "Stop: The Stop symbol (often an oval or rounded rectangle) signifies the end of the process. It's the conclusion of the algorithm and halts further execution."
+],
+        "ytLink": "https://www.youtube.com/embed/DXciCVt6hfA",
+        "sources": [
+            {
+                "name": "Technology Strive",
+                "url": "https://technologystrive.com/flow-chart/sum-of-two-numbers"
+            },
+            {
+                "name": "Testing Docs",
+                "url": "https://www.testingdocs.com/raptor-flowchart-adding-two-numbers/"
+            }
+        ]
+    },
+    // B
+    {
+        "name": "design-a-flowchart-to-subtract-two-numbers",
+        "title": "Design a Flowchart to subtract two numbers",
+        "language": "plaintext",
+        "images":[
+            "https://i.imgur.com/JHHpCLV.png",
+        ]
+        ,
+        "type": "Theory",
+        "description":`
+        The flowchart starts with the beginning of the process, followed by the declaration of variables to store values. Input is obtained for the numbers to be subtracted. The difference between the numbers is calculated and stored. The program then displays the calculated difference. The process ends, signifying the completion of the program.
+        `,
+        "explanation":[
+            "START → Indicates the beginning of the process, where the program starts its execution.",
+            "Declare n1, n2 and DIFF → Indicates the declaration of three variables: n1, n2, and DIFF. These variables are used to store the values of the two numbers to be subtracted and their difference.",
+            "Read (input) n1 and n2 → Indicates the input of the two numbers to be subtracted. The program asks the user to enter the values of n1 and n2 and stores them in the respective variables.",
+            "DIFF = n1 - n2 → Indicates the calculation of the difference between n1 and n2 and storing it in the variable DIFF. The program subtracts the value of n2 from the value of n1 and stores the result in the variable DIFF.",
+            "Display (output) DIFF → Indicates the output of the difference between n1 and n2. The program displays the value of DIFF on the screen or prints it on a paper.",
+            "STOP → Indicates the end of the process, where the program stops executing."
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/OmvcE2nPF7g",
+        "sources": [
+            {
+                "name": "Moomoomath blog",
+                "url": "http://www.moomoomathblog.com/2016/05/flowchart-adding-subtracting-integers.html"
+            },
+            {
+                "name": "Testing Docs",
+                "url": "https://www.testingdocs.com/raptor-flowchart-to-subtract-two-numbers/"
+            }
+        ]
+    },
+    // C
+    {
+        "name": "design-a-flowchart-to-find-smallest-of-3-numbers",
+        "title": "Design a Flowchart to find Smallest of 3 numbers",
+        "language": "plaintext",
+        "images":[
+            "https://i.imgur.com/A7soDyh.png",
+        ]
+        ,
+        "type": "Theory",
+        "description":`
+        The flowchart outlines a step-by-step algorithm to find the smallest number among three input numbers, incorporating input validation for error handling. Beginning with the Start symbol, it proceeds to declare variables to hold the input numbers. The user is prompted to input three numbers, which are then validated for correctness. The algorithm compares the first two numbers and stores the smaller one. Following this, it compares the smallest to the third number, determining the overall smallest number among the three. Finally, it displays this smallest number to the user.
+        `,
+        "explanation":[
+            "START → The Start symbol indicates the beginning of the process.",
+            "VARIABLE DECLARATION → This step is used to declare the three variables: n1, n2, and n3, which will store the three numbers for comparison.",
+            "USER INPUT PROMPT → This step prompts the user to enter three numbers.",
+            "INPUT VALIDATION → Here, the program validates the user's input to ensure it consists of three valid numbers and provides error handling if needed.",
+            "COMPARE FIRST TWO NUMBERS → Compares the first two numbers (n1 and n2) and stores the smaller one in a variable called min.",
+            "COMPARE SMALLEST TO THIRD NUMBER → Compares the smallest number (min) to the third number (n3) to determine the overall smallest number among the three.",
+            "DISPLAY OUTPUT → The program displays the smallest number to the user."
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/Dj_5Tv5sOxI",
+        "sources": [
+            {
+                "name": "Brainly",
+                "url": "https://brainly.in/question/19808848"
+            },
+            {
+                "name": "Testing Docs",
+                "url": "https://www.testingdocs.com/questions/flowchart-to-find-the-smallest-among-3-numbers/"
+            }
+        ]
+    },
+    // D
+    {
+        "name": "design-a-flowchart-to-find-largest-of-3-numbers",
+        "title": "Design a Flowchart to find Largest of 3 numbers",
+        "language": "plaintext",
+        "images":[
+            "https://i.imgur.com/UbOOfHp.png",
+        ]
+        ,
+        "type": "Theory",
+        "description":`
+        The flowchart explains a program's structure for finding the largest among three numbers. It begins by declaring variables (n1, n2, n3, and MAX) and initializing MAX with n1. The program then takes user input for n1, n2, and n3. It compares n2 and n3 with MAX, updating MAX if necessary. Finally, it displays the largest value (MAX) and ends the process.
+        `,
+        "explanation":[
+            "START → The Start symbol indicates the beginning of the process.",
+            "VARIABLE DECLARATION → This step is used to declare the variables: n1, n2, n3, and MAX. Variables are introduced to store values during the program execution.",
+            "USER INPUT PROMPT → In this step, the program prompts the user to input values for n1, n2, and n3. The entered values are stored in their respective variables.",
+            "INITIALIZE MAX → The program sets the initial value of MAX by assigning the value of n1 to it.",
+            "COMPARE n2 TO MAX → Compares the value of n2 with MAX to determine the largest so far. If n2 is greater, MAX is updated.",
+            "COMPARE n3 TO MAX → Compares the value of n3 with MAX to determine the overall largest number. MAX is updated if needed.",
+            "DISPLAY MAX → The program displays the largest value (MAX) to the user.",
+            "END → The End symbol indicates the conclusion of the program's execution."
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/wuXqMMHdnBk",
+        "sources": [
+            {
+                "name": "Math Answers",
+                "url": "https://math.answers.com/other-math/Draw_a_flowchart_diagram_to_find_the_largest_of_3_numbers#:~:text=The%20flowchart%20in%20deriving%20the%20largest%20of%20three,the%20decision%20box%20for%20%27Is%20variable_A%20not%20numeric%3F%27."
+            },
+            {
+                "name": "Alphabet Coder",
+                "url": "https://www.alphabetacoder.com/2020/08/flowchart-to-find-largest-among-three.html"
+            }
+        ]
+    },
+    // E
+    {
+        "name": "design-a-flowchart-to-calculate-and-print-sum-of-n-numbers",
+        "title": "Design a Flowchart to Calculate & Print Sum of N numbers",
+        "language": "plaintext",
+        "images":[
+            "https://i.imgur.com/S71uPMd.png",
+        ]
+        ,
+        "type": "Theory",
+        "description":`
+        The flowchart outlines a program that calculates the sum of numbers from 1 to a given input (N). It begins by declaring three variables: N, SUM, and COUNT. The program then takes user input for N and initializes SUM and COUNT. A loop iterates as long as COUNT is less than or equal to N, adding COUNT to the SUM and incrementing COUNT. Finally, it displays the sum (SUM) and concludes the program.
+        `,
+        "explanation":[
+            "START → The Start symbol marks the beginning of the program.",
+            "VARIABLE DECLARATION → This step introduces and names three variables: N, SUM, and COUNT, used to store input, sum of numbers, and the current number to be added.",
+            "USER INPUT PROMPT → This step involves prompting the user to input the value of N, which is then stored in the variable N.",
+            "INITIALIZE SUM → The program sets the initial value of SUM to 0.",
+            "INITIALIZE COUNT → The program sets the initial value of COUNT to 1.",
+            "CONDITION CHECK → This step checks if COUNT is less than or equal to N, determining whether the loop should continue or not.",
+            "UPDATE SUM → When the condition is true, this step updates the value of SUM by adding COUNT to it.",
+            "UPDATE COUNT → Following SUM update, this step increments COUNT by 1 for the next iteration.",
+            "DISPLAY OUTPUT → The program displays the calculated sum (SUM) to the user.",
+            "END → The End symbol marks the conclusion of the program's execution."
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/TWKgV0oTgm8",
+        "sources": [
+            {
+                "name": "Technology Strive",
+                "url": "https://technologystrive.com/flow-chart/sum-of-first-n-numbers"
+            },
+            {
+                "name": "A Tech Daily",
+                "url": "https://www.atechdaily.com/posts/algorithm-and-flowchart-for-finding-the-sum-of-natural-number-upto-given-number?q=trading+tips#gsc.tab=0&gsc.q=trading%20tips&gsc.page=1"
+            }
+        ]
+    },
+    // Experiment 05
+    {
+        "name": "design-and-create-webpage-for-displaying-your-poem",
+        "title": "Design and create webpage for displaying your poem",
+        "language": "html",
+        "code": `
+    <!-- /* Save HTML file as: Prog5.html* / -->
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>MY POEM</title>
+    </head>
+    
+    <body style="background-color: lightpink">
+        <center>
+            <h1>
+                <mark><u>JOHNY JOHNY YES PAPA</mark></u>
+            </h1>
+    
+            <p>
+                <i>
+                    <font size="7" color="darkblue" face="Arial"> JOHNY JOHNY..<br> YES PAPA</font>
+                </i>
+            </p>
+    
+            <p><b>
+                    <font size="6" color="darkred" face=”Courier New”>
+                        EATING SUGAR.? <br>NO PAPA</font>
+                </b></p>
+    
+            <p><i><b>
+                        <font size="5" color="darkgreen" face="Calibri"> TELLING A LIE.?<br> NO PAPA</font>
+                    </b></i></p>
+    
+            <p>
+                <font size="5" color="darkvoilet" face=”Times New Roman”>
+                    OPEN YOUR MOUTH.?<br> HA HA..</font>
+            </p>
+    
+            <p>
+                <font size="4" color="black">
+                    Poem by: XYZ</font>
+            </p>
+        </center>
+    </body>
+    
+    </html>
+        
+        `,
+        "images":[
+            "https://i.imgur.com/MHrenC9.png",
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+        The HTML code creates a webpage displaying a poem titled "JOHNY JOHNY YES PAPA" in a visually styled format using HTML tags for various font styles, sizes, colors, and alignments
+        `,
+        "explanation":[
+            "Starting HTML: Imagine HTML is like a language computers understand. When we start an HTML file, it's like saying to the computer, 'Hey, get ready, we're going to talk in HTML now.'",
+            "Setting Up the Document: It's like when you're writing a letter. You want to set up the basics first. The <head> part is where you put important information about your 'letter,' like a title. It's like writing the recipient's address on an envelope. The <title> is like giving your letter a title, so people know what it's about before they open it.",
+            "Starting the Main Content: Now, let's dive into the body of the letter. The <body> is where the main content of your letter goes, just like the main part of the letter you're writing.",
+            "Making Things Look Nice: Sometimes, you want your letter to look neat and organized. The <center> tag is like saying, 'Let's make everything nice and centered on the page, so it looks clean and tidy.'",
+            "Writing the Heading: When you write a letter, you often start with a big, important title. The <h1> tag is like that - it's saying, 'This is the big, important part.' And using <mark> and <u> is like highlighting and underlining the title to make it even more noticeable.",
+            "Styling the Text: You know how you use different styles when you write, like making words slanted or changing their size? The <i> tag is like saying, 'Let's slant this part, like we're whispering it.' And the <font> tag is like choosing how big, what color, and what font style you want for that part of the text.",
+            "Adding Emphasis: Sometimes, you want to say something extra loud or strong in your letter. The <b> tag is like using bold letters to make a point, saying, 'Pay attention to this!'",
+            "Writing the Poem: Now, let's get into the heart of the letter, where you tell your story. In this case, it's a poem. You use different styles to make it interesting, just like using different voices or expressions when you tell a story to make it more exciting.",
+            "Ending the Letter: Like ending a letter with your name, here we have a line that tells us who wrote the poem. It's like saying, 'This awesome poem was created by XYZ.'",
+            "Closing HTML: Finally, just like you finish a letter with 'Sincerely' or 'Best regards,' we end our HTML file by saying, 'Okay, we're done with the whole thing. The end!'"
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/fz-pj8_C9YY?si=UoRJUCapYmkOFpXB",
+        "sources": [
+            {
+                "name": "Medium",
+                "url": "https://medium.com/programming-for-design-practices/html-basics-4172cffc0a5b"
+            },
+            {
+                "name": "khanacademy",
+                "url": "https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pc/challenge-write-a-poem"
+            }
+        ]
+    },
+    // Experiment 06
+    {
+        "name": "design-and-create-webpage-for-your-wish-list",
+        "title": "Design and create webpage for your Wish List (What you want to do).Also list Challenges and Opportunities along with images to present your dreams. (List ordered and unordered, Image, table)",
+        "language": "html",
+        "code": `
+        <!-- /* Save HTML file as: Prog6.html* / -->
+        <!DOCTYPE HTML>
+        <html>
+        
+        <head>
+            <title>Wish List</title>
+        </head>
+        
+        <body style="background-color: lightyellow;">
+            <font size="6">
+        
+                <p><u><mark> MY WISH LIST </mark></u></p>
+        
+                <p><b><u> ORDERED LIST </u></b></p>
+                <ol type="a">
+                    <li> I wish to travel to abroad</li>
+                    <li> I wish to have a wonderful graduate ceremony with my family</li>
+                    <li> I wish to dance with Prabhu Deva</li>
+                    <li> i wish to be a speaker in front of 400 people</li>
+                    <li> I wish to play cricket with Virat Kohli</li>
+                </ol>
+        
+                <p><b><u> UNORDERED LIST </u></b></p>
+                <ul type="circle">
+                    <li> I wish to dance under the rain with loving people</li>
+                    <li> I wish to go to the wonderful resort with my family</li>
+                    <li> I wish to learn new Programming Language </li>
+                    <li> I wishto Join the big corporate company </li>
+                    <li> I wish to swim in ocean </li>
+                </ul>
+        
+        
+                <p><b><u>IMAGE</u></b></p>
+                <img src="https://media1.tenor.com/images/a862d2cb92bfbe6213e298871b1e8a9a/tenor.gif?itemid=15805236"
+                    width="300" height="300">
+        
+                <p><b><u> TABLE </u></b></p>
+                <table border=2 bordercolor="red" cellpadding="8">
+                    <tr bgcolor="lightgreen">
+                        <th>CHALLENGES</th>
+                        <th>OPPORTUNITIES</th></b>
+                    </tr>
+                    <tr>
+                        <td> Confusion about career choices. </td>
+                        <td> To recoup with career decision.</td>
+                    </tr>
+                    <tr>
+                        <td> Failures related to exam.</td>
+                        <td> Responding to Globalization.</td>
+                    </tr>
+                    <tr>
+                        <td> Time management</td>
+                        <td> Empowering People.</td>
+                    </tr>
+                    <tr>
+                        <td> Competition pressure</td>
+                        <td> Improving Ethical Behavior. </td>
+                    </tr>
+                    <tr>
+                        <td> Communicating issues to parents</td>
+                        <td> Getting recognition at early stage. </td>
+                    </tr>
+                </table>
+            </font>
+        </body>
+        
+        </html>
+        `,
+        "images":[
+            "https://i.imgur.com/7PF9Ca3.png",
+            "https://i.imgur.com/7XFgugo.png"
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+        The HTML code creates a webpage describing a wish list. It includes a title, a marked and underlined heading, ordered and unordered lists of wishes, an image, and a table showcasing challenges and opportunities.
+        `,
+        "explanation":[
+                "Starting HTML: HTML is like a language that computers understand. Starting HTML is like saying 'Hey, let's create a webpage using this language.'",
+                "Starting the Main Content: Once we've set up the structure, we start the main part where all the content goes, like the body of a letter.",
+                "Making Things Look Nice: The <font> tag helps in styling the text, making it visually appealing. In this case, it's used to make the text larger for emphasis.",
+                "Writing the Heading: The heading is like the title of a story or book, grabbing attention. The <u> and <mark> tags underline and highlight the heading to make it stand out.",
+                "Creating Lists: Lists help organize information. The ordered list <ol> has items with numbers (a, b, c...), and the unordered list <ul> has items with bullet points.",
+                "Adding List Items: Each <li> (list item) is a wish on our wish list. It's like writing down each item on a list, like items you need to buy at a store.",
+                "Displaying an Image: Just like putting a picture in your storybook, the <img> tag displays an image. It helps convey an idea or a feeling related to the content.",
+                "Creating a Table: The <table> tag is like creating a chart or a table in a document. It's a neat way to organize information, like listing challenges and opportunities side by side.",
+                "Closing HTML: Just like how you say 'The end' at the end of a story, we close the HTML file. It's like putting a period at the end of a sentence. It tells the computer we're done."
+              
+          ]
+          ,
+        "ytLink": "https://www.youtube.com/embed/rPblWCqOgWs",
+        "sources": [
+            {
+                "name": "W3S",
+                "url": "https://www.w3schools.com/html//html_lists_ordered.asp"
+            },
+            {
+                "name": "W3D",
+                "url": "https://www.w3docs.com/learn-html/html-lists.html"
+            }
+        ]
+    },
+    // Experiment 07
+    {
+        "name": "design-and-create-webpage-using-html-and-css-about-an-awesome-animal",
+        "title": "Design and create webpage using HTML and CSS about an awesome animal (Use necessary CSS tags)",
+        "language": "html",
+        "code": `
+    <!-- /* Save HTML file as: Prog7.html* / -->
+    <!DOCTYPE HTML>
+    <html>
+            
+    <head>
+        <title>Cascading Style Sheet (CSS)</title>
+        <style type="text/css">
+            head_style {
+                height: 400px;
+                width: 50em;
+                color: blue;
+                background-color: lightpink;
+                font-size: 50px;
+                letter-spacing: 10;
+                text-align: center;
+                text-shadow: 3px 3px yellow;
+                box-shadow: 2px 4px 4px blue;
+                border: 4px solid red;
+                padding: 20px;
+            }
+    
+            p1_style {
+                color: red;
+                font-size: 25px;
+                letter-spacing: 10;
+                text-shadow: 2px 2px black;
+            }
+    
+            p2_style {
+                color: blue;
+                font-size: 35px;
+                letter-spacing: 10;
+                text-shadow: 3px 3px yellow;
+            }
+    
+            p3_style {
+                color: green;
+                font-size: 35px;
+                letter-spacing: 10;
+                text-shadow: 3.5px 1.5px brown;
+            }
+        </style>
+    </head>
+    
+    <body bgcolor="lightyellow">
+    
+        <center>
+            <br>
+            <br><br>
+    
+            <head_style>MY AWESOME ANIMAL (TIGER)</head_style>
+            <br><br>
+            <br><br>
+    
+            <img src="https://th.bing.com/th/id/R.44911e11999fb4f7007ca88ebe5a8952?rik=RZTQYPK6Ge35bA&riu=http%3a%2f%2fwww.pbh2.com%2fwordpress%2fwp-content%2fuploads%2f2012%2f10%2fcutest-animal-gifs-tiger-cub-yawn.gif&ehk=G6CyfhCYAApjqm4PyDwsU2iF7cdBJnMBQ%2f6dhaiBrhs%3d&risl=&pid=ImgRaw&r=0" Height="200" Width="400"></img>
+    
+            <p>
+                <p1_style>Tiger is the biggest and strongest animals of the jungle.<br> Tiger is a “Carnivorous” animal
+                    (flesh eater) </p1_style>
+            </p>
+    
+    
+            <p>
+                <p2_style>Tigers live for about 25 years<br>
+                    Tigers love to swim and play in the water<p2_style>
+            </p>
+    
+    
+            <p>
+                <p3_style>Tigers can sprint at over 60 km/hour<br>
+                    Tigers “Roaring” sound can reach 3km away</p3_style>
+            </p>
+    
+        </center>
+    
+    </body>
+    
+    </html>
+        `,
+        "images":[
+            "https://i.imgur.com/zB7fJyy.png",
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+        The HTML code defines a basic webpage structure with a title and content about tigers. It includes a styled heading, an image of a tiger, and three paragraphs with specific styles.
+        `,
+        "explanation":[
+            "Starting HTML: HTML is like a language that computers understand. Starting HTML is like saying 'Hey, let's create a webpage using this language.'",
+            "Defining Document Type: <!doctype html> is the declaration that specifies the document type and version of HTML being used.",
+            "Starting HTML Structure: <html> is the root element that encapsulates the entire HTML content.",
+            "Defining Head: <head> contains meta-information about the document, including the title and links to external resources like stylesheets.",
+            "Setting Title: <title> sets the title of the webpage that appears in the browser's title bar or tab.",
+            "Defining Styles: <style> is used to embed CSS (Cascading Style Sheets) within the HTML file, defining styles for various elements.",
+            "Defining CSS Styles: CSS styles are defined for selectors like head_style, p1_style, p2_style, and p3_style, specifying properties like color, font-size, letter-spacing, text-shadow, etc.",
+            "Starting Body: <body> is the container for the visible content of the webpage.",
+            "Setting Body Background Color: bgcolor attribute of <body> sets the background color of the page to light yellow.",
+            "Centering Content: <center> is used to center the content within it.",
+            "Adding Line Breaks: <br> creates line breaks for spacing.",
+            "Displaying Heading: <head_style> defines a styled heading for the webpage.",
+            "Displaying Image: <img> displays an image sourced from a URL with specified height and width.",
+            "Displaying Paragraphs: <p> defines paragraphs of text.",
+            "Defining CSS Styles for head_style: Styles a heading with the class 'head_style'. It sets the height to 400 pixels, width to 50em, text color to blue, background color to light pink, font size to 50 pixels, letter spacing to 10 units, aligns text to center, adds a yellow text shadow, blue box shadow, a 4-pixel solid red border, and 20 pixels of padding.",
+            "Defining CSS Styles for p1_style: Styles for a paragraph. It sets the text color to red, font size to 25 pixels, letter spacing to 10 units, and adds a black text shadow.",
+            "Defining CSS Styles for p2_style: Styles for another paragraph. It sets the text color to blue, font size to 35 pixels, letter spacing to 10 units, and adds a yellow text shadow.",
+            "Defining CSS Styles for p3_style: Styles for yet another paragraph. It sets the text color to green, font size to 35 pixels, letter spacing to 10 units, and adds a brown text shadow."   
+            ]
+            ,
+        "ytLink": "https://www.youtube.com/embed/D-h8L5hgW-w?si=c-fEGMJ6y5bx1ItO",
+        "sources": [
+            {
+                "name": "W3S",
+                "url": "https://www.w3schools.com/html/html_css.asp"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/web-technology/html-css/"
+            }
+        ]
+    },
+    // Experiment 07
+    {
+        "name": "design-and-create-web-page-for-a-travel-book-with-more-than-three-pages",
+       "title": "Design and create web page for a travel book with more than 3 pages, table to list places (iframe, hyperlink)",
+        "language": "html",
+        "code": `
+
+<!-- /* Save HTML file as: homepage.html* / -->
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <title> Travel Book </title>
+
+</head>
+
+
+<body bgcolor="purple">
+    <center>
+        <font size="7" color="yellow"> MY TRAVEL BOOK WEBSITE </font>
+
+
+        <font size="4" color="yellow">
+            <marquee> Welcome to my Travel book website </marquee><br>
+
+
+            <iframe src="frame1.html" name="f1" style="width:30%; height:80%;"></iframe>
+            <iframe src="frame2.html" name="f2" style="width:65%; height:80%;"></iframe>
+
+            <marquee> Contact for more details X.Y.Z M.L.B. Polytechnic, Belagavi </marquee>
+        </font>
+    </center>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- frame1.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+<body bgcolor="lightpink">
+    <font size="6">
+        <center>
+            <table border=2 bordercolor="blue" cellpadding="10">
+                <tr>
+
+                    <th bgcolor="lightgreen">*TOURIST PLACES*</th>
+
+                </tr>
+                <tr>
+
+                    <td><a href="gokak.html" target="f2"> Gokak Falls</a></td>
+                </tr>
+                <tr>
+                    <td><a href="mysore.html" target="f2"> Mysore Palace </a></td>
+
+
+
+                </tr>
+                <tr>
+
+                    <td><a href="golgumbaz.html" target="f2"> Golgumbaz</a></td>
+                </tr>
+                <tr>
+                    <td><a href="badami.html" target="f2"> Badami Caves</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="contact.html" target="f2"> Contact Details</a></td>
+
+                </tr>
+
+            </table>
+        </center>
+    </font>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- frame2.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+    <body bgcolor="lightpink">
+
+    </body>
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- gokak.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+<body>
+    <center>
+        <font color="white">
+            <h1>GOKAK FALLS</h1>
+        </font><img src="https://2.bp.blogspot.com/-OabbDTIevwg/WpVAuCvfiQI/AAAAAAAAO98/zCc_XUwLyMIH5nmG8dlo1ezLRH_svalfwCLcBGAs/s1600/1.jpg" width="400" height="300">
+
+        <table border="2" cellpadding="20">
+            <caption>
+                <font size="5" color="white">INFORMATION ABOUT GOKAKFALLS</font>
+            </caption>
+            <tr bgcolor="yellow">
+                <th> FOOD </th>
+                <th> HALT </th>
+                <th> GUIDE </th>
+                <th> TOURIST BUS </th>
+
+            </tr>
+            <tr bgcolor="lightyellow">
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- mysore.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+<body>
+    <center>
+        <font color="white">
+            <h1>MYSORE PALACE</h1>
+        </font><img src="https://th.bing.com/th/id/OIP.jWJ0UUluSEaVjLmgfeFObAHaE7?pid=ImgDet&rs=1" width="500"
+            height="300">
+
+        <table border="2" cellpadding="20">
+            <caption>
+                <font size="5" color="white">INFORMATION ABOUT MYSORE PALACE
+                </font>
+            </caption>
+            <tr bgcolor="yellow">
+                <th>FOOD</th>
+                <th>HALT</th>
+                <th>GUIDE</th>
+                <th>TOURIST BUS</th>
+
+            </tr>
+            <tr bgcolor="lightyellow">
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
+
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- badami.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+
+<body>
+
+
+
+    <center>
+        <font color="white">
+            <h1>BADAMI CAVES</h1>
+
+
+        </font><img src="https://www.mustvisitplace.com/wp-content/uploads/2019/04/badami-cave-temples-scaled.jpg" width="400" height="300">
+
+        <table border="2" cellpadding="20">
+            <caption>
+                <font size="5" color="white">INFORMATION ABOUTT BADAMI </font>
+            </caption>
+            <tr bgcolor="yellow">
+                <th>FOOD</th>
+                <th>HALT</th>
+                <th>GUIDE</th>
+                <th>TOURIST BUS</th>
+
+            </tr>
+            <tr bgcolor="lightyellow">
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- golgumbaz.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+<body>
+    <center>
+        <font color="white">
+            <h1>GOLGUMBAZ</h1>
+        </font><img src="https://th.bing.com/th/id/R.f9c991a53d7ab1544d66526ca81f4eaa?rik=LtvE%2fTNE3UgAuA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fb6%2fGol_Gumbaz.jpg&ehk=tdLI5yhAv3%2bEk%2bweOPgnTWCGKnpkd8oPEVx43fVj%2fJU%3d&risl=&pid=ImgRaw&r=0" width="400" height="300">
+
+        <table border="2" cellpadding="20">
+            <caption>
+                <font size="5" color="white">INFORMATION ABOUT GOLGUMBAZ</font>
+            </caption>
+            <tr bgcolor="yellow">
+                <th>FOOD</th>
+                <th>HALT</th>
+                <th>GUIDE</th>
+                <th>TOURIST BUS</th>
+
+
+            </tr>
+            <tr bgcolor="lightyellow">
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+                <td> Available </td>
+
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- contact.html - Save this in a html file with the following name in the same directory -->
+
+<html>
+
+<body bgcolor="lightpink">
+    <h2>
+        <center>CONTACT DETAILS</center>
+    </h2>
+    <font size="6">
+        <p>X.Y.Z<br> M.L.B POLYTECHNIC <br> BELAGAVI </p>
+    </font>
+</body>
+
+</html>
+
+
+`,
+        "images":[
+            "https://i.imgur.com/VIARmKT.png",
+            "https://i.imgur.com/eC9s0Sk.png",
+            "https://i.imgur.com/WsNXEjp.png",
+            "https://i.imgur.com/mcIN4kE.png",
+            "https://i.imgur.com/FyzO2Mr.png",
+            "https://i.imgur.com/dgPoFKq.png"
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+
+        `,
+        "explanation":[
+            "HTML file: Save as homepage.html. Save this code as a file named \"homepage.html\" to create the main HTML file for the website.",
+            "DOCTYPE HTML: Declares the HTML version being used. This declaration specifies that the HTML version being used is HTML5.",
+            "Root HTML Element: Root element that encapsulates the entire HTML content. The <html> element is the root element that encapsulates all the content on the webpage.",
+            "Head Section: Contains meta-information about the document. The <head> section contains meta-information, links to stylesheets, and other data that helps describe the document.",
+            "Title: Sets the title of the webpage. The <title> element sets the title of the webpage, which is displayed in the browser's title bar or tab.",
+            "Body Section: Contains the visible content of the webpage. The <body> section contains the visible content of the webpage, including text, images, and other elements.",
+            "Background Color: Sets the background color of the webpage. The \"bgcolor\" attribute in the <body> tag sets the background color of the webpage.",
+            "Centering Content: Centers content on the webpage. The <center> tag is used to center content within its parent element.",
+            "Styling Fonts and Marquee: Styles fonts and creates scrolling text. The <font> tag with \"size\" and \"color\" attributes is used to style fonts, and the <marquee> tag creates scrolling text.",
+            "Displaying External Content: Displays external content (HTML files) within iframes. The <iframe> tag is used to display external content (in this case, other HTML files) within the webpage.",
+            "Closing HTML: Closes the HTML structure. The closing </html> tag signifies the end of the HTML document.",
+            "frame1.html: Save this as an HTML file. Save the content provided under \"frame1.html Content\" as a file named \"frame1.html\".",
+            "frame1.html Content: Displays a table with links to tourist places. The HTML content that creates a table with links to various tourist places.",
+            "frame2.html: Save this as an HTML file. Save the content provided under \"frame2.html Content\" as a file named \"frame2.html\".",
+            "frame2.html Content: Empty page with a light pink background. The HTML content for an empty page with a light pink background.",
+            "gokak.html: Save this as an HTML file. Save the content provided under \"gokak.html Content\" as a file named \"gokak.html\".",
+            "gokak.html Content: Information about Gokak Falls. The HTML content that provides information about Gokak Falls.",
+            "mysore.html: Save this as an HTML file. Save the content provided under \"mysore.html Content\" as a file named \"mysore.html\".",
+            "mysore.html Content: Information about Mysore Palace. The HTML content that provides information about Mysore Palace.",
+            "badami.html: Save this as an HTML file. Save the content provided under \"badami.html Content\" as a file named \"badami.html\".",
+            "badami.html Content: Information about Badami Caves. The HTML content that provides information about Badami Caves.",
+            "golgumbaz.html: Save this as an HTML file. Save the content provided under \"golgumbaz.html Content\" as a file named \"golgumbaz.html\".",
+            "golgumbaz.html Content: Information about Golgumbaz. The HTML content that provides information about Golgumbaz.",
+            "contact.html: Save this as an HTML file. Save the content provided under \"contact.html Content\" as a file named \"contact.html\".",
+            "contact.html Content: Displays contact details. The HTML content that displays contact details."
+          ]
+          
+            ,
+        "ytLink": "https://www.youtube.com/embed/aRGdDy18qfY",
+        "sources": [
+            {
+                "name": "W3S",
+                "url": "https://www.w3schools.com/html/html_iframe.asp"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/html-iframes/"
+            }
+        ]
+    },
+    // Experiment 08
+    {
+        "name": "design-and-create-web-page-with-javaScript-to-design-simple-calculator",
+        "title": "Design and create web page with JavaScript to Design simple calculator to perform the following operations: sum, product, difference and quotient",
+        "language": "html",
+        "code": `
+
+<!-- Write the CSS and JS code in separate files - Here i wrote them in the HTML itself due to compatibility issues -->
+<!-- /* Save HTML file as: Prog9.html* / -->
+<html>
+
+<head>
+<meta name=”viewport” content=”width=device-width,initial-scale=1”>
+<title>My Favorite Animal</title>
+<link rel="stylesheet" href="style.css">
+<!-- Write the CSS and JS code in separate files - Here i wrote them in the HTML itself due to compatibility issues -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .button {
+        width: 50;
+        height: 50;
+        font-size: 25;
+        margin: 2;
+        cursor: pointer;
+    }
+    
+    .textview {
+        width: 217;
+        margin: 5;
+        font-size: 25;
+        padding: 5;
+    }
+</style>
+<!-- Write the CSS and JS code in separate files - Here i wrote them in the HTML itself due to compatibility issues -->
+<script>
+        function insert(num){
+            document.form.textview.value=document.form.textview.value+num;
+        }
+        
+        function equal(){
+            var exp=document.form.textview.value;
+            if(exp){
+                document.form.textview.value=eval(exp);
+            }
+        }
+        
+        function clean(){
+            document.form.textview.value="";
+        }
+        
+        function back(){
+            var exp=document.form.textview.value;
+            document.form.textview.value=exp.substring(0,exp.length-1);
+        }
+</script>
+</head>
+
+<body>
+<div class="main">
+    <form name="form">
+        <input class="textview" name="textview">
+    </form>
+
+    <table>
+        <tr>
+            <td><input class="button" type="button" value="C" onclick="clean()"></td>
+            <td><input class="button" type="button" value="<" onclick="back()"></td>
+            <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+            <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+            <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+            <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+            <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+            <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+            <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+            <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+            <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+            <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+            <td><input class="button" type="button" value="=" onclick="equal()"></td>
+        </tr>
+
+        <tr>
+            <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+            <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+        </tr>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- style.css.html - Save this in a css file with the following name in the same directory -->
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.button {
+width: 50;
+height: 50;
+font-size: 25;
+margin: 2;
+cursor: pointer;
+}
+
+.textview {
+width: 217;
+margin: 5;
+font-size: 25;
+padding: 5;
+}
+
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- script.html - Save this in a JS file with the following name in the same directory -->
+
+function insert(num){
+    document.form.textview.value=document.form.textview.value+num;
+}
+
+function equal(){
+    var exp=document.form.textview.value;
+    if(exp){
+        document.form.textview.value=eval(exp);
+    }
+}
+
+function clean(){
+    document.form.textview.value="";
+}
+
+function back(){
+    var exp=document.form.textview.value;
+    document.form.textview.value=exp.substring(0,exp.length-1);
+} 
+
+`,
+        "images":[
+            "https://i.imgur.com/LfFq4fB.png",
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+
+        `,
+        "explanation":[
+            "Save the HTML code as 'Prog9.html'. This file contains the structure of the webpage.",
+            "DOCTYPE HTML declares the HTML version being used for the document.",
+            "The root <html> element encapsulates the entire HTML content.",
+            "The <head> section holds meta-information about the document, like the title and links.",
+            "The <title> element sets the title of the webpage, visible in the browser's title bar.",
+            "Link to an external CSS file named 'style.css' to style the webpage.",
+            "CSS rules for styling elements on the webpage are defined in this section.",
+            "CSS rules for centering content on the webpage.",
+            "JavaScript functions for the calculator's functionality are included here.",
+            "The function 'insert(num)' adds the provided number to the calculator display.",
+            "The function 'equal()' evaluates and displays the result of the expression.",
+            "The function 'clean()' clears the calculator display.",
+            "The function 'back()' removes the last character from the calculator display.",
+            "The <body> section contains the visible content of the webpage.",
+            "Input elements, representing numbers, operators, and actions in the calculator.",
+            "Link to an external JavaScript file named 'script.js' to provide additional functionality."
+            ],
+        "ytLink": "https://www.youtube.com/embed/LX8_z1nvqk4",
+        "sources": [
+            {
+                "name": "Dev",
+                "url": "https://dev.to/javascriptacademy/create-a-simple-calculator-using-html-css-and-javascript-4o7k"
+            },
+            {
+                "name": "Make Use Of",
+                "url": "https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/"
+            }
+        ]
+    },
+    // Experiment 10
+    {
+        "name": "design-and-create-a-personal-webpage-with-dashboard",
+        "title": "Design and create a personal webpage with dashboard",
+        "language": "html",
+        "code": `
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <style>
+        /* Style the header */
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: blue;
+            color: white;
+            font-size: 25px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: yellow;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+        }
+
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+
+
+<body bgcolor="lightgreen">
+
+    <div class="header">
+        <h1>DASH BOARD</h1>
+        <p>(Admin control Panel)</p>
+    </div>
+
+    <div class="navbar">
+        <b><a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a></b>
+    </div>
+
+</body>
+
+</html>
+        `,
+        "images":[
+            "https://i.imgur.com/dfN1ArJ.png",
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+        The given HTML code constructs a basic webpage featuring a title, header, and a navigation bar. The document starts with a declaration specifying HTML5. The head section defines the title of the page and internal CSS styles for styling elements such as the header and navigation bar. The body has a light green background and contains two main divisions: one for the header and another for the navigation bar. The header includes a prominent heading "DASH BOARD" and a descriptive subtext "Admin control Panel." The navigation bar, styled in yellow with links styled for hover effects, presents three links labeled "Link 1," "Link 2," and "Link 3." This setup provides a foundation for creating a visually appealing webpage with a clear header and accessible navigation.
+        `,
+        "explanation":[
+            "DOCTYPE html: Declares the HTML5 doctype for the document.",
+            "Root <html> element: Root element that encapsulates the entire HTML content.",
+            "Head section: Contains meta-information and styles for the document.",
+            "Title: Sets the title of the webpage, visible in the browser's title bar.",
+            "CSS Styling: Defines styles for elements within the webpage.",
+            "Style the header: Styles the header section with padding, background, and font color.",
+            "Style the top navigation bar: Styles the navigation bar with overflow and background color.",
+            "Style the navigation bar links: Styles the links within the navigation bar.",
+            "Change color on hover: Specifies styles for links on hover.",
+            "Body section: Contains the visible content of the webpage.",
+            "Background color: Sets the background color of the body section.",
+            "Header: Contains a heading and a subheading within a styled <div>.",
+            "Navigation bar: Contains navigation links within a styled <div>."
+            ],
+        "ytLink": "https://www.youtube.com/embed/g6HqL18plx4",
+        "sources": [
+            {
+                "name": "Tutsplus",
+                "url": "https://webdesign.tutsplus.com/building-an-admin-dashboard-layout-with-css-and-a-touch-of-javascript--cms-33964t"
+            },
+            {
+                "name": "Geeks for Geeks",
+                "url": "https://www.geeksforgeeks.org/how-to-create-responsive-admin-dashboard-using-html-css-javascript/"
+            }
+        ]
+    },
+    // Experiment 11
+    {
+        "name": "design-and-create-web-page-about-advantages-of-business-process-automation",
+        "title": "Design and create web page about advantages of business process automation with respect to your branch of engineering",
+        "language": "html",
+        "code": `
+<!-- Prog11.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BPA</title>
+    <style>
+        header {
+            color: red;
+            font-size: 75px;
+            text-shadow: 5px 5px 5px yellow;
+        }
+    </style>
+</head>
+
+
+<body bgcolor="lightgreen">
+    <center>
+        <header>BUSINESS PROCESS AUTOMATION</header>
+
+
+        <iframe src="frame1.html" name="f1" style="width:30%; height:80vh;"></iframe>
+        <iframe src="frame2.html" name="f2" style="width:65%; height:80vh;"></iframe>
+
+
+        <marquee>Advantage of Process Automation for Computer Science branch</marquee>
+    </center>
+</body>
+
+</html>
+
+<!-- frame1.html -->
+<html>
+
+<body bgcolor="lightpink">
+    <font size="6">
+        <center>
+            <table border=2 bordercolor="blue" cellpadding="25" colspan="10">
+                <tr>
+                    <th bgcolor="lightgreen">*ENGINEERING BRANCHES*</th>
+                </tr>
+                <tr>
+                    <td><a href="CS.html" target="f2">COMPUTER SCI.</a></td>
+                </tr>
+                <tr>
+                    <td>CIVIL ENGINEERING</td>
+                </tr>
+                <tr>
+                    <td>ELECTRONICS & COMM.</td>
+                </tr>
+                <tr>
+                    <td>MECHANICAL ENGG.</td>
+                </tr>
+                <tr>
+                    <td>ELECTRICAL & ELELC</td>
+                </tr>
+            </table>
+        </center>
+    </font>
+</body>
+
+</html>
+
+<!-- frame2.html -->
+<html>
+
+    <body bgcolor="lightpink">
+        
+    </body>
+
+</html>
+
+<!-- cs.html -->
+<html>
+
+<body>
+    <center>
+        <h1>ADVANTAGES OF PROCESS AUTOMATION</h1>
+        <h3>COMPUTER SCIENCE</h3>
+    </center>
+    <font size="4" color="blue">
+        <p>•Companies implementing process automation have a competitive advantage over their competitors, both in
+            operability and reliability.</p>
+        <p>•Process automation reduces operative costs and increases both, speed and reliability of task implementation,
+            development, and support.</p>
+        <p>•Enhances work continuity, and satisfies the demand for IT departments and computer systems.</p>
+        <p>•It improves strategic analysis and streamlines the deployment of applications through automated job
+            execution.</p>
+        <p>•Eliminates manual execution of command sequences subjected to human error, increasing efficiency and
+            productivity of the organization.</p>
+        <p>•It enables visibility and control of all workflows and tasks, providing status reports of completed
+            processes, in progress and incoming tasks.</p>
+        <p>•It supports both, local, virtual and hybrid environments in the Cloud, increasing the possibilities of
+            management and process control.</p>
+    </font>
+</body>
+
+</html>
+
+        `,
+        "images":[
+            "https://i.imgur.com/7h11S2d.png",
+            "https://i.imgur.com/AFbokkP.png"
+        ]
+        ,
+        "type": "Lab",
+        "description":`
+        The HTML code comprises multiple interconnected files. Prog11.html serves as the main page, styled with a centered red header and iframes. frame1.html presents engineering branches as clickable links, linking to content in frame2.html. cs.html details advantages of process automation specific to Computer Science. The structure allows centralized control and display of diverse content through iframes, enhancing user experience and information presentation.
+        `,
+        "explanation":[
+            "Prog11.html: This is the main HTML file for the webpage structure. It's the entry point of the webpage and contains the overall structure of the page.",
+            "DOCTYPE HTML: This declaration specifies the HTML version being used, ensuring proper rendering and interpretation of the HTML content.",
+            "Root HTML Element: The <html> element is the root element that encapsulates the entire HTML content of the webpage. All other elements are nested within this root element.",
+          
+            "Head Section: The <head> section contains meta-information about the document, such as links to stylesheets, character encoding, and the title of the webpage.",
+            "Title: The <title> element sets the title of the webpage, which is displayed in the title bar or tab of the web browser.",
+            "CSS Styling: CSS styles are applied to the 'header' element, specifying properties like color, font size, and text shadow to style the header text.",
+          
+            "Body Section: The <body> section contains the visible content of the webpage, including headers, text, images, and other elements.",
+            "Background Color: The 'bgcolor' attribute sets the background color of the webpage to light green, providing a specific aesthetic to the page.",
+            "Centering Content: The 'center' tag is used to center-align content within the webpage for a visually pleasing layout.",
+          
+            "IFrames: Two <iframe> elements are used to display external content within framed sections. 'frame1.html' and 'frame2.html' are loaded into these iframes.",
+            "Marquee: The <marquee> tag creates a scrolling text effect, displaying the advantage of process automation for the Computer Science branch.",
+            "frame1.html: This file contains a table listing different engineering branches and links to their respective pages.",
+          
+            "frame2.html: This file provides a light pink background. It's used to display content in the second iframe, creating a visually appealing layout.",
+            "CS.html: This file displays detailed advantages of process automation specific to the Computer Science branch, providing valuable information to users."
+            ],
+        "ytLink": "https://www.youtube.com/embed/npnp--SSx_8?si=Br6BUPvPQmeyUWf5",
+        "sources": [
+            {
+                "name": "W3S",
+                "url": "https://www.w3schools.com/howto/howto_css_responsive_iframes.asp"
+            },
+            {
+                "name": "StackOverflow",
+                "url": "https://stackoverflow.com/questions/2979860/how-are-iframes-used-in-html"
             }
         ]
     },
