@@ -22,7 +22,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-
 // Express application 'using' middlewares
 app.use(cors(corsOptions));
 app.use('/semester',semester)

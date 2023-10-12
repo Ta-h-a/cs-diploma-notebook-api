@@ -17,23 +17,46 @@ const semesters =
                     "name":"information-technology",
                     "URL": "practical/information-technology"
                 },
-                {
-                    "title":"IT Skills",
-                    "name":"information-technology",
-                    "URL": "practical/information-technology"
-                }
             ]
         },
         {
+            // "id": 1,
+            "title": "Second Semester",
 
+            // Below data is for testing purposes
+            "description": "Welcome First Year Students. Choose your interested course and start studying !",
+            // Here courses refer to our college subjects
+            // "theory": [
+            //     {
+            //         "name":"mathematics",
+            //         "URL": "/theory/mathematics"
+            //     }
+            // ],
+            "practical":[
+                
+            ]
         },
         {
+            // "id": 1,
+            "title": "Third Semester",
 
+            // Below data is for testing purposes
+            "description": "Welcome Second Year Students. Choose your interested course and start studying !",
+            // Here courses refer to our college subjects
+            // "theory": [
+            //     {
+            //         "name":"mathematics",
+            //         "URL": "/theory/mathematics"
+            //     }
+            // ],
+            "practical":[
+                
+            ]
         },
         {
             // "id": 1,
             "title": "Fourth Semester",
-            "description": "Welcome Fourth Year Students. Choose your interested course and start studying !😊",
+            "description": "Welcome Second Year Students. Choose your interested course and start studying !😊",
             // Here courses refer to our college subjects
             // "theory": [
             //     {

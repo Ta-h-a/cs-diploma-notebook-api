@@ -371,6 +371,22 @@ development, communication etc.
                 ]
             },
         ]
+    },
+    {
+        "title": "Statistics And Analytics",
+        "name": "statistics-and-analytics",
+        // below we have rough data for now - For testing purposes
+        "code": "20CS41P",
+        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.",
+        "experiments": [],
+    },
+    {
+        "title": "Python",
+        "name": "python",
+        // below we have rough data for now - For testing purposes
+        "code": "20CS41P",
+        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.",
+        "experiments": [],
     }
 ]
 module.exports = data
