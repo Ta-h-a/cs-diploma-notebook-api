@@ -162,7 +162,7 @@ development, communication etc.
         "title": "DSA with Python",
         "name": "data-structures-and-algorithms-with-python",
         "code": "20CS41P",
-        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.",
+        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.  Knowledge of data structures is essential for software design and development. Learning data structures with  Python offer flexibility and ease of programming with many built in data structures and libraries",
         "experiments": [
             {
                 "name": "experiment-01",
@@ -376,17 +376,209 @@ development, communication etc.
         "title": "Statistics And Analytics",
         "name": "statistics-and-analytics",
         // below we have rough data for now - For testing purposes
-        "code": "20CS41P",
-        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.",
+        "code": "I dont have the code yet",
+        "description": "",
         "experiments": [],
     },
     {
-        "title": "Python",
-        "name": "python",
-        // below we have rough data for now - For testing purposes
-        "code": "20CS41P",
-        "description": "Data structures are the techniques organizing data and of designing the algorithms for real-life projects.",
-        "experiments": [],
+        "title": "Python Programming",
+        "name": "python-programming",
+        "code": "20CS31P",
+        "description": "Computer programming is the core of the computer science and strong fundamentals of programming can  give competitive edge in this technology driven world. It not only instils coding skills but also enhances  problem solving ability. Python is one of the programming languages which is versatile and feature rich yet  simple and easy to learn, has applications in various domains. Python programming sets the basis for further  study of web development, data science, IoT, machine learning etc.",
+        "experiments": [
+            {
+                "name": "experiment-02",
+                "title":"Experiment 02",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a programme to `SWAP` the variable values",
+                        "URL": "practical/experiment/write-a-programme-to-swap-the-variable-values"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program for `QUADRATIC EQUATION`",
+                        "URL": "practical/experiment/write-a-python-program-for-quadratic-equation"
+                    },
+                    {
+                        "tag": "C",
+                        "name": "Write a python program to perform ‘Arithmetic operations  by Input function’",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-arithmetic-operations-by-input-function"
+                    }
+                ]
+            },
+            {
+                "name": "experiment-03",
+                "title":"Experiment 03",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program to find largest of 3 numbers by using `IF` Statement.",
+                        "URL": "practical/experiment/write-a-python-program-to-find-largest-of-three-numbers-by-using-if-statement"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program to check given value is `PASS` or `FAIL` by using `IF ELSE` Statement",
+                        "URL": "practical/experiment/write-a-python-program-to-check-given-value-is-pass-or-fail-by-using-if-else-statement"
+                    },
+                    {
+                        "tag": "C",
+                        "name": "Write a python program to identify the given number is POSITIVE,NEGATIVE OR ZERO by using `IF ELSE IF` Statement",
+                        "URL": "practical/experiment/write-a-python-program-to-identify-the-given-number-is-positive-negative-or-zero-by-using-if-else-if-statement"
+                   }
+                ]
+            },
+            {
+                "name": "experiment-04",
+                "title":"Experiment 04",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Execute and perform python program by using `Looping Statement`",
+                        "URL": "practical/experiment/execute-and-perform-python-program-by-using-looping-statement"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program to `Implement Addition of 10 Natural Numbers`",
+                        "URL": "practical/experiment/write-a-python-program-to-implement-addition-of-ten-natural-numbers"
+                    },
+                    {
+                        "tag": "C",
+                        "name": "Write a python program to perform Addition of First 10 Natural numbers by using `While Looping Statement`.",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-addition-of-first-ten-natural-numbers-by-using-while-looping-statement"
+                   }
+                ]
+            },
+            {
+                "name": "experiment-05",
+                "title":"Experiment 05",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Python program for `SET operations`",
+                        "URL": "practical/experiment/python-program-for-set-operations"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Python program for `UNION method`",
+                        "URL": "practical/experiment/python-program-for-union-method"
+                    },
+                    {
+                        "tag": "C",
+                        "name": "Python program for `INTERSECTION method`",
+                        "URL": "practical/experiment/python-program-for-intersection-method"
+                   }
+                ]
+            },
+            {
+                "name": "experiment-06",
+                "title":"Experiment 06",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a Python program for performing `list implementation with Basic Operating of LIST`",
+                        "URL": "practical/experiment/write-a-python-program-for-performing-list-implementation-with-basic-operating-of-list"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-07",
+                "title":"Experiment 07",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a Python Program to perform `Basic Operations Of DICTIONARY`",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-basic-operations-of-dictionary"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-08",
+                "title":"Experiment 08",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program for `STRING` manipulation method",
+                        "URL": "practical/experiment/write-a-python-program-for-string-manipulation-method"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program for `Array` implementation",
+                        "URL": "practical/experiment/write-a-python-program-for-array-implementation"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-09",
+                "title":"Experiment 09",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program to `Find Largest of 3 Numbers by Using in-built Function`",
+                        "URL": "practical/experiment/write-a-python-program-to-find-largest-of-three-numbers-by-using-in-built-function"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program to `Calculate Factorial of given Number`",
+                        "URL": "practical/experiment/write-a-python-program-to-calculate-factorial-of-given-number"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-10",
+                "title":"Experiment 10",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program to define module to `find Fibonacci Numbers Import the Module to Another Program`",
+                        "URL": "practical/experiment/write-a-python-program-to-define-module-to-find-fibonacci-numbers-import-the-module-to-another-program"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-11",
+                "title":"Experiment 11",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program by using `NumPy module`",
+                        "URL": "practical/experiment/write-a-python-program-by-using-numpy-module"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-12",
+                "title":"Experiment 12",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write a python program to perform `read` operation in FILE",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-read-operation-in-file"
+                    },
+                    {
+                        "tag": "B",
+                        "name": "Write a python program to perform `Write` operation in `FILE`",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-write-operation-in-file"
+                    },
+                    {
+                        "tag": "C",
+                        "name": "Write a python program to perform `APPEND` operation in `FILE`",
+                        "URL": "practical/experiment/write-a-python-program-to-perform-append-operation-in-file"
+                    },
+                ]
+            },
+            {
+                "name": "experiment-13",
+                "title":"Experiment 13",
+                "sections": [
+                    {
+                        "tag": "A",
+                        "name": "Write the python program to `identify and resolve exceptions and handling methods` in python",
+                        "URL": "practical/experiment/write-the-python-program-to-identify-and-resolve-exceptions-and-handling-methods-in-python"
+                    },
+                ]
+            },
+        ],
     }
 ]
 module.exports = data

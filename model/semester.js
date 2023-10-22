@@ -3,7 +3,7 @@ const semesters =
         {
             // "id": 1,
             "title": "First Semester",
-            "description": "Welcome First Year Students. Choose your interested course and start studying !",
+            "description": "Welcome First Semester Students. Choose your interested course and start studying !",
             // Here courses refer to our college subjects
             // "theory": [
             //     {
@@ -15,7 +15,8 @@ const semesters =
                 {
                     "title":"IT Skills",
                     "name":"information-technology",
-                    "URL": "practical/information-technology"
+                    "URL": "practical/information-technology",
+                    "description": "IT skills"
                 },
             ]
         },
@@ -24,7 +25,7 @@ const semesters =
             "title": "Second Semester",
 
             // Below data is for testing purposes
-            "description": "Welcome First Year Students. Choose your interested course and start studying !",
+            "description": "Welcome Second Semester Students. Choose your interested course and start studying !",
             // Here courses refer to our college subjects
             // "theory": [
             //     {
@@ -41,7 +42,7 @@ const semesters =
             "title": "Third Semester",
 
             // Below data is for testing purposes
-            "description": "Welcome Second Year Students. Choose your interested course and start studying !",
+            "description": "Welcome Third Semester Students. Choose your interested course and start studying !",
             // Here courses refer to our college subjects
             // "theory": [
             //     {
@@ -50,13 +51,18 @@ const semesters =
             //     }
             // ],
             "practical":[
-                
+                {
+                    "title": "Python Programming",
+                    "name": "python-programming",
+                    "URL": "practical/python-programming",
+                    "description": "Python programming"
+                }
             ]
         },
         {
             // "id": 1,
             "title": "Fourth Semester",
-            "description": "Welcome Second Year Students. Choose your interested course and start studying !😊",
+            "description": "Welcome Fourth Semester Students. Choose your interested course and start studying !😊",
             // Here courses refer to our college subjects
             // "theory": [
             //     {
@@ -67,7 +73,8 @@ const semesters =
                 {
                     "title":"DSA with Python",
                     "name":"data-structures-and-algorithms-with-python",
-                    "URL": "practical/data-structures-and-algorithms-with-python"
+                    "URL": "practical/data-structures-and-algorithms-with-python",
+                    "description": "DSA with Python"
                 },
                 // {
                 //     "title":"Operating Systems",
