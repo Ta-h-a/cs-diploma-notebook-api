@@ -160,40 +160,40 @@ const experimentData = [
     title: "Implement an ADT and Compute space and time complexities.",
     code: `
         
-        # Check Pair
+    # Check Pair
 
-        def checkPair(A, size, x):
-            for i in range(0, size-1):
-                for j in range(i+1, size):
-                    if (A[i] + A[j] == x):
-                        print(f"Pair with given sum ({x}) is", {A[i]}, {A[j]})
-                        return 1
-            return 0
+    def checkPair(A, size, x):
+        for i in range(0, size-1):
+            for j in range(i+1, size):
+                if (A[i] + A[j] == x):
+                    print(f"Pair with given sum ({x}) is", {A[i]}, {A[j]})
+                    return 1
+        return 0
 
-        array = [0, -1, 2, -3, 1, 55]
-        x = 2
-        if (checkPair(array, len(array), x)):
-            print("Valid pair exists for the value:", x)
-        else:
-            print("Valid pair does not exist for the value:", x)
+    array = [0, -1, 2, -3, 1, 55]
+    x = 2
+    if (checkPair(array, len(array), x)):
+        print("Valid pair exists for the value:", x)
+    else:
+        print("Valid pair does not exist for the value:", x)
 
-        # Count Frequency
+    # Count Frequency
 
-        def countFreq(arr, n):
-            visited = [False for i in range(n)]
-            for i in range(n):
-                if visited[i] == True:
-                    continue
-                count = 1
-                for j in range(i+1, n):
-                    if arr[i] == arr[j]:
-                        visited[j] = True
-                        count += 1
-                print(arr[i], count)
+    def countFreq(arr, n):
+        visited = [False for i in range(n)]
+        for i in range(n):
+            if visited[i] == True:
+                continue
+            count = 1
+            for j in range(i+1, n):
+                if arr[i] == arr[j]:
+                    visited[j] = True
+                    count += 1
+            print(arr[i], count)
 
-        arr = [50, 50, 3, 60, 7, 8, 50, 45, 55, 45, 100, 100, 100, 100000]
-        n = len(arr)
-        countFreq(arr, n)
+    arr = [50, 50, 3, 60, 7, 8, 50, 45, 55, 45, 100, 100, 100, 100000]
+    n = len(arr)
+    countFreq(arr, n)
 
 
         `,
@@ -241,44 +241,44 @@ const experimentData = [
     language: "python",
     title: "Implement Linear  Search compute  space and time  complexities.",
     code: `
-        # Main Code
-        def linearSearch(array, x):
-            for i in range(len(array)):
-                if array[i] == x:
-                    print("Search is successful at position", i)
-                    return
-            print("Search is not successful")
-        
-        # --------------------------------------------------
-        # Full Code Implementation
-        # --------------------------------------------------
-        
-        import time
-        import numpy as np
-        import matplotlib.pyplot as plt
-        
-        def linear_Search(A, x):
-            for i in range(0, len(A)):
-                if A[i] == x:
-                    print("Search is success at position", i)
-                    return
-            print("Search is not successful")
-        
-        element = np.array([i*1000 for i in range(1, 40)])
-        plt.xlabel('List length')
-        plt.ylabel('Time complexity')
-        times = list()
-        for i in range(1, 40):
-            start = time.time()
-            a = np.random.randint(1000, size=i*1000)
-            linear_Search(a, 1)
-            end = time.time()
-            times.append(end-start)
-            print("Time taken for linear search in", i*1000, "Elements is", end-start, "s")
-        plt.plot(element, times, label="Linear Search")
-        plt.grid()
-        plt.legend()
-        plt.show()       
+    # Main Code
+    def linearSearch(array, x):
+        for i in range(len(array)):
+            if array[i] == x:
+                print("Search is successful at position", i)
+                return
+        print("Search is not successful")
+    
+    # --------------------------------------------------
+    # Full Code Implementation
+    # --------------------------------------------------
+    
+    import time
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    def linear_Search(A, x):
+        for i in range(0, len(A)):
+            if A[i] == x:
+                print("Search is success at position", i)
+                return
+        print("Search is not successful")
+    
+    element = np.array([i*1000 for i in range(1, 40)])
+    plt.xlabel('List length')
+    plt.ylabel('Time complexity')
+    times = list()
+    for i in range(1, 40):
+        start = time.time()
+        a = np.random.randint(1000, size=i*1000)
+        linear_Search(a, 1)
+        end = time.time()
+        times.append(end-start)
+        print("Time taken for linear search in", i*1000, "Elements is", end-start, "s")
+    plt.plot(element, times, label="Linear Search")
+    plt.grid()
+    plt.legend()
+    plt.show()       
 
 
         `,
@@ -338,75 +338,74 @@ const experimentData = [
     title:
       "Implement Bubble, Selection, insertion sorting algorithms compute space and time complexities, plot graph using asymptomatic notations.",
     code: `
-
-        # --------------------------------------------------
-        def selectionSort(array):
-            n = len(array)
-            for i in range(n):
-                min_index = i
-                for j in range(i+1, n):
-                    if array[j] < array[min_index]:
-                        min_index = j
-                array[i], array[min_index] = array[min_index], array[i]
-        
-        
-        def bubbleSort(array):
-            n = len(array)
-            for i in range(n-1):
-                swapped = False
-                for j in range(n-i-1):
-                    if array[j] > array[j+1]:
-                        array[j], array[j+1] = array[j+1], array[j]
-                        swapped = True
-                if not swapped:
-                    return
-        
-        
-        def insertionSort(array):
-            n = len(array)
-            for i in range(1, n):
-                x = array[i]
-                j = i - 1
-                while j >= 0 and x < array[j]:
-                    array[j + 1] = array[j]
-                    j -= 1
-                array[j + 1] = x
-        
-        
-        sorts = [
-            {"name": "Selection Sort", "sort": lambda arr: selectionSort(arr)},
-            {"name": "Bubble Sort", "sort": lambda arr: bubbleSort(arr)},
-            {"name": "Insertion Sort", "sort": lambda arr: insertionSort(arr)}
-        ]
-        
-        
-        import time
-        import numpy as np
-        import matplotlib.pyplot as plt
-        
-        elements = np.array([i * 1000 for i in range(1, 5)])
-        plt.xlabel('List length')
-        plt.ylabel('Time Complexity')
-        elements = np.array([i * 1000 for i in range(1, 5)])
-        plt.xlabel('List Length')
-        plt.ylabel('Time Complexity')
-        
-        for sort in sorts:
-            times = list()
-            start_all = time.time()
-            for i in range(1, 5):
-                start = time.time()
-                a = np.random.randint(1000, size=i * 1000)
-                sort["sort"](a)
-                end = time.time()
-                times.append(end - start)
-                print(sort["name"], "Sorted", i * 1000, "Elements in", end - start, "s")
-            end_all = time.time()
-            print(sort["name"], "Sorted Element in", end_all - start_all, "s")
-            plt.plot(elements, times, label=sort["name"])
-        plt.grid()
-        plt.legend()
-        plt.show()
+    # --------------------------------------------------
+    def selectionSort(array):
+        n = len(array)
+        for i in range(n):
+            min_index = i
+            for j in range(i+1, n):
+                if array[j] < array[min_index]:
+                    min_index = j
+            array[i], array[min_index] = array[min_index], array[i]
+    
+    
+    def bubbleSort(array):
+        n = len(array)
+        for i in range(n-1):
+            swapped = False
+            for j in range(n-i-1):
+                if array[j] > array[j+1]:
+                    array[j], array[j+1] = array[j+1], array[j]
+                    swapped = True
+            if not swapped:
+                return
+    
+    
+    def insertionSort(array):
+        n = len(array)
+        for i in range(1, n):
+            x = array[i]
+            j = i - 1
+            while j >= 0 and x < array[j]:
+                array[j + 1] = array[j]
+                j -= 1
+            array[j + 1] = x
+    
+    
+    sorts = [
+        {"name": "Selection Sort", "sort": lambda arr: selectionSort(arr)},
+        {"name": "Bubble Sort", "sort": lambda arr: bubbleSort(arr)},
+        {"name": "Insertion Sort", "sort": lambda arr: insertionSort(arr)}
+    ]
+    
+    
+    import time
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    elements = np.array([i * 1000 for i in range(1, 5)])
+    plt.xlabel('List length')
+    plt.ylabel('Time Complexity')
+    elements = np.array([i * 1000 for i in range(1, 5)])
+    plt.xlabel('List Length')
+    plt.ylabel('Time Complexity')
+    
+    for sort in sorts:
+        times = list()
+        start_all = time.time()
+        for i in range(1, 5):
+            start = time.time()
+            a = np.random.randint(1000, size=i * 1000)
+            sort["sort"](a)
+            end = time.time()
+            times.append(end - start)
+            print(sort["name"], "Sorted", i * 1000, "Elements in", end - start, "s")
+        end_all = time.time()
+        print(sort["name"], "Sorted Element in", end_all - start_all, "s")
+        plt.plot(elements, times, label=sort["name"])
+    plt.grid()
+    plt.legend()
+    plt.show()
         
 
         `,
@@ -511,39 +510,39 @@ const experimentData = [
       "Implement Binary Search using recursion Compute space and time complexities.",
     code: `
 
-        def binarySearch(array, target, si, ei):
-            if si > ei:
-                return -1
-            middle_element = (si + ei) // 2
-            if array[middle_element] == target:
-                return middle_element
-            elif target < array[middle_element]:
-                return binarySearch(array, target, si, middle_element - 1)
-            else:
-                return binarySearch(array, target, middle_element + 1, ei)
-        
-        import time
-        import numpy as np
-        import matplotlib.pyplot as plt
-        
-        elements = np.array([i * 1000 for i in range(1, 40)])
-        plt.xlabel('List length')
-        plt.ylabel('Time Complexity')
-        times = list()
-        
-        for i in range(1, 40):
-            start = time.time()
-            a = np.random.randint(1000, size=i * 1000)
-            binarySearch(a, 1, 0, len(a) - 1)
-            end = time.time()
-            times.append(end - start)
-            print("Time Taken to Binary Search in ", i * 1000, "Elements is", end - start, "s")
-        end_all = time.time()
-        x
-        plt.plot(elements, times, label="Binary Sort")
-        plt.grid()
-        plt.legend()
-        plt.show()
+    def binarySearch(array, target, si, ei):
+        if si > ei:
+            return -1
+        middle_element = (si + ei) // 2
+        if array[middle_element] == target:
+            return middle_element
+        elif target < array[middle_element]:
+            return binarySearch(array, target, si, middle_element - 1)
+        else:
+            return binarySearch(array, target, middle_element + 1, ei)
+    
+    import time
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    elements = np.array([i * 1000 for i in range(1, 40)])
+    plt.xlabel('List length')
+    plt.ylabel('Time Complexity')
+    times = list()
+    
+    for i in range(1, 40):
+        start = time.time()
+        a = np.random.randint(1000, size=i * 1000)
+        binarySearch(a, 1, 0, len(a) - 1)
+        end = time.time()
+        times.append(end - start)
+        print("Time Taken to Binary Search in ", i * 1000, "Elements is", end - start, "s")
+    end_all = time.time()
+    x
+    plt.plot(elements, times, label="Binary Sort")
+    plt.grid()
+    plt.legend()
+    plt.show()
 
 
         `,
@@ -604,59 +603,59 @@ const experimentData = [
       "Implement Merge and quick sorting algorithms compute space and time complexities",
     code: `
 
-        def mergeSort(arr): 
-            if len(arr) > 1:
-                a = len(arr) //2
-                l = arr[:a]
-                r = arr[a:]
-                # sort the two halves
-                mergeSort(l)
-                mergeSort(r)
-                i = j = k = 0
-                while i < len(l) and j < len(r):
-                    if l[i] < r[j]:
-                        arr[k] = l[i] 
-                        i += 1
-                    else:
-                        arr[k] = r[j]
-                        j += 1
-                    k += 1
-                while i < len(l):
-                    arr[k] = l[i]
+    def mergeSort(arr): 
+        if len(arr) > 1:
+            a = len(arr) //2
+            l = arr[:a]
+            r = arr[a:]
+            # sort the two halves
+            mergeSort(l)
+            mergeSort(r)
+            i = j = k = 0
+            while i < len(l) and j < len(r):
+                if l[i] < r[j]:
+                    arr[k] = l[i] 
                     i += 1
-                    k += 1
-                while j < len(r):
+                else:
                     arr[k] = r[j]
                     j += 1
-                    k += 1
+                k += 1
+            while i < len(l):
+                arr[k] = l[i]
+                i += 1
+                k += 1
+            while j < len(r):
+                arr[k] = r[j]
+                j += 1
+                k += 1
 
-        
-        import time
-        import numpy as np
-        import matplotlib.pyplot as plt
-        
-        elements = np.array([i*1000 for i in range(1, 5)])
-        plt.xlabel('List length')
-        plt.ylabel('Time Complexity')
-        elements = np.array([i*1000 for i in range(1, 5)])
-        plt.xlabel('List Length')
-        plt.ylabel('Time Complexity')
-        
-        times = list()
-        start_all = time.time()
-        for i in range(1, 5):
-            start = time.time()
-            a = np.random.randint(1000, size=i*1000)
-            mergeSort(a)
-            end = time.time()
-            times.append(end - start)
-            print("Merge Sort Sorted", i*1000, "Elements in", end - start, "s")
-        end_all = time.time()
-        print("Merge Sort Sorted Elements in", end_all - start_all, "s")
-        plt.plot(elements, times, label="Merge Sort")
-        plt.grid()
-        plt.legend()
-        plt.show()
+    
+    import time
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    elements = np.array([i*1000 for i in range(1, 5)])
+    plt.xlabel('List length')
+    plt.ylabel('Time Complexity')
+    elements = np.array([i*1000 for i in range(1, 5)])
+    plt.xlabel('List Length')
+    plt.ylabel('Time Complexity')
+    
+    times = list()
+    start_all = time.time()
+    for i in range(1, 5):
+        start = time.time()
+        a = np.random.randint(1000, size=i*1000)
+        mergeSort(a)
+        end = time.time()
+        times.append(end - start)
+        print("Merge Sort Sorted", i*1000, "Elements in", end - start, "s")
+    end_all = time.time()
+    print("Merge Sort Sorted Elements in", end_all - start_all, "s")
+    plt.plot(elements, times, label="Merge Sort")
+    plt.grid()
+    plt.legend()
+    plt.show()
         
         `,
     type: "Lab",
@@ -751,18 +750,18 @@ const experimentData = [
     title: "Implement Fibonacci sequence with dynamic programming.",
     code: `
 
-        def fib(n):
-            a = [0, 1]
-            for i in range(2, n+1):
-                a.append(a[i-1] + a[i-2])
-            return a
-    
-        print(fib(2))
-        print(fib(3))
-        print(fib(5))
-        print(fib(6))s
-        print(fib(7))
-        print(fib(8))
+    def fib(n):
+        a = [0, 1]
+        for i in range(2, n+1):
+            a.append(a[i-1] + a[i-2])
+        return a
+
+    print(fib(2))
+    print(fib(3))
+    print(fib(5))
+    print(fib(6))s
+    print(fib(7))
+    print(fib(8))
 
         `,
     type: "Lab",
@@ -815,59 +814,59 @@ const experimentData = [
     title:
       "Implement Singly linked list (Traversing the Nodes, searching for a Node, Prepending Nodes, Removing Nodes)",
     code: `
-        # Node class
+    # Node class
 
-        class Node:
-            def __init__(self, data):
-                self.data = data
-                self.next = None
-        
-        def printLL(head):
-            curr = head
-            while curr:
-                print(curr.data, end=" -> ")
-                curr = curr.next
-            print("None")
-        
-        def searching(head, data):
-            curr = head
-            while curr:
-                if curr.data == data:
-                    return True
-                curr = curr.next
-            return False
-        
-        def input(data):
-            head = None
-            tail = None
-            for item in data:
-                newNode = Node(item)
-                if not head:
-                    head = newNode
-                    tail = newNode
-                else:
-                    tail.next = newNode
-                    tail = newNode
-            return head
-        
-        def removeNode(head, data):
-            if head and head.data == data:
-                return head.next
-            curr = head
-            while curr and curr.next:
-                if curr.next.data == data:
-                    curr.next = curr.next.next
-                    break
-                curr = curr.next
-            return head
-        
-        myList = input([42, 32, 22, 2, 12])
-        printLL(myList)
-        print("Search for 93:", searching(myList, 93))
-        print("Searching for 12:", searching(myList, 12))
-        print("Removing 12 from the list")
-        myList = removeNode(myList, 12)
-        printLL(myList)
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.next = None
+    
+    def printLL(head):
+        curr = head
+        while curr:
+            print(curr.data, end=" -> ")
+            curr = curr.next
+        print("None")
+    
+    def searching(head, data):
+        curr = head
+        while curr:
+            if curr.data == data:
+                return True
+            curr = curr.next
+        return False
+    
+    def input(data):
+        head = None
+        tail = None
+        for item in data:
+            newNode = Node(item)
+            if not head:
+                head = newNode
+                tail = newNode
+            else:
+                tail.next = newNode
+                tail = newNode
+        return head
+    
+    def removeNode(head, data):
+        if head and head.data == data:
+            return head.next
+        curr = head
+        while curr and curr.next:
+            if curr.next.data == data:
+                curr.next = curr.next.next
+                break
+            curr = curr.next
+        return head
+    
+    myList = input([42, 32, 22, 2, 12])
+    printLL(myList)
+    print("Search for 93:", searching(myList, 93))
+    print("Searching for 12:", searching(myList, 12))
+    print("Removing 12 from the list")
+    myList = removeNode(myList, 12)
+    printLL(myList)
                 
         `,
     type: "Lab",
@@ -915,24 +914,24 @@ const experimentData = [
     title: "Implement linked list Iterators",
     code: `
 
-        class Iter:
-        def __init__(self, limit):
-            self.limit = limit
-    
-        def __iter__(self):
-            self.x = 10
-            return self
-    
-        def __next__(self):
-            x = self.x
-            if x > self.limit:
-                raise StopIteration
-            self.x = x + 1
-            return x
-    
-    
-    for i in Iter(13):
-        print(i)
+    class Iter:
+    def __init__(self, limit):
+        self.limit = limit
+
+    def __iter__(self):
+        self.x = 10
+        return self
+
+    def __next__(self):
+        x = self.x
+        if x > self.limit:
+            raise StopIteration
+        self.x = x + 1
+        return x
+
+
+for i in Iter(13):
+    print(i)
     
         `,
     type: "Lab",
@@ -975,67 +974,67 @@ const experimentData = [
     title: "Implement DLL",
     code: `
 
-        # Node class
+    # Node class
 
-        class Node:
-            def __init__(self,data=None):
-                self.data = data
-                self.next = None
-                self.prev = None
+    class Node:
+        def __init__(self,data=None):
+            self.data = data
+            self.next = None
+            self.prev = None
+            
+    class DoublyLinkedList:
+        def __init__(self):
+            self.head = None
+            
+        def push(self,data):
+            newNode = Node(data)
+            newNode.next = self.head
+            if self.head is not None:
+                self.head.prev = newNode
+            self.head = newNode
+            
+        def insertAfter(self,prevNode,data):
+            if prevNode is None:
+                print("The given previous node can't be NULL")
+                return
+            newNode = Node(data)
+            newNode.next = prevNode.next
+            prevNode.next = newNode
+            newNode.prev = prevNode
+            if newNode.next:
+                newNode.next.prev = newNode
                 
-        class DoublyLinkedList:
-            def __init__(self):
-                self.head = None
-                
-            def push(self,data):
-                newNode = Node(data)
-                newNode.next = self.head
-                if self.head is not None:
-                    self.head.prev = newNode
+        def append(self,data):
+            newNode = Node(data)
+            if self.head is None:
                 self.head = newNode
+                return
+            lastNode = self.head
+            while lastNode.next:
+                lastNode = lastNode.next
+            lastNode.next = newNode
+            newNode.prev = lastNode
+            
+        def print_list(self,node):
+            print("Traversal in forward direction")
+            while node:
+                print("{}".format(node.data))
+                last = node
+                node = node.next
+            print("Traversal in reverse direction")
+            while last:
+                print("{}".format(last.data))
+                last = last.prev
                 
-            def insertAfter(self,prevNode,data):
-                if prevNode is None:
-                    print("The given previous node can't be NULL")
-                    return
-                newNode = Node(data)
-                newNode.next = prevNode.next
-                prevNode.next = newNode
-                newNode.prev = prevNode
-                if newNode.next:
-                    newNode.next.prev = newNode
-                    
-            def append(self,data):
-                newNode = Node(data)
-                if self.head is None:
-                    self.head = newNode
-                    return
-                lastNode = self.head
-                while lastNode.next:
-                    lastNode = lastNode.next
-                lastNode.next = newNode
-                newNode.prev = lastNode
-                
-            def print_list(self,node):
-                print("Traversal in forward direction")
-                while node:
-                    print("{}".format(node.data))
-                    last = node
-                    node = node.next
-                print("Traversal in reverse direction")
-                while last:
-                    print("{}".format(last.data))
-                    last = last.prev
-                    
-        dll = DoublyLinkedList()
-        dll.push(1)
-        dll.append(2)
-        dll.append(3)
-        dll.append(4)
-        dll.append(5)
-        dll.insertAfter(dll.head.next,76)
-        print("Created DLL is: ")
-        dll.print_list(dll.head)
+    dll = DoublyLinkedList()
+    dll.push(1)
+    dll.append(2)
+    dll.append(3)
+    dll.append(4)
+    dll.append(5)
+    dll.insertAfter(dll.head.next,76)
+    print("Created DLL is: ")
+    dll.print_list(dll.head)
             
         `,
     type: "Lab",
@@ -1077,84 +1076,84 @@ const experimentData = [
     title: "Implement CDLL",
     code: `
 
-        # Node class
-        class Node:
-            def __init__(self, data=None):
-                self.data = data
-                self.next = None
-                self.prev = None
-        
-        class CDoublyLinkedList:
-            def __init__(self):
-                self.head = None
-                self.tail = None
-        
-            def createCDLL(self, data):
-                newNode = Node(data)
+    # Node class
+    class Node:
+        def __init__(self, data=None):
+            self.data = data
+            self.next = None
+            self.prev = None
+    
+    class CDoublyLinkedList:
+        def __init__(self):
+            self.head = None
+            self.tail = None
+    
+        def createCDLL(self, data):
+            newNode = Node(data)
+            self.head = newNode
+            self.tail = newNode
+            print("The circular doubly linked list has been created")
+    
+        def insertAtBeg(self, data):
+            newNode = Node(data)
+            if not self.head:
                 self.head = newNode
                 self.tail = newNode
-                print("The circular doubly linked list has been created")
-        
-            def insertAtBeg(self, data):
-                newNode = Node(data)
-                if not self.head:
-                    self.head = newNode
-                    self.tail = newNode
-                else:
-                    newNode.next = self.head
-                    self.head.prev = newNode
-                    self.head = newNode
+            else:
+                newNode.next = self.head
+                self.head.prev = newNode
+                self.head = newNode
+            self.tail.next = self.head
+            self.head.prev = self.tail
+    
+        def delBeg(self):
+            if not self.head:
+                return
+            if self.head.next == self.tail.next:
+                self.head = self.tail = None
+            else:
+                self.head = self.head.next
                 self.tail.next = self.head
                 self.head.prev = self.tail
-        
-            def delBeg(self):
-                if not self.head:
-                    return
-                if self.head.next == self.tail.next:
-                    self.head = self.tail = None
-                else:
-                    self.head = self.head.next
-                    self.tail.next = self.head
-                    self.head.prev = self.tail
-        
-            def searchList(self, data):
-                pos = 0
-                tempNode = self.head
-                while True:
-                    pos += 1
-                    if tempNode.data == data:
-                        print("The required data was found at position:", pos)
-                        break
-                    if tempNode == self.tail:
-                        print("The required data does not exist in the list")
-                        break
-                    tempNode = tempNode.next
-        
-            def display(self):
-                if not self.head:
-                    print("The linked list does not exist")
-                    return
-                tempNode = self.head
-                while True:
-                    print(tempNode.data)
-                    if tempNode == self.tail:
-                        break
-                    tempNode = tempNode.next
-        
-        
-        cdll = CDoublyLinkedList()
-        cdll.createCDLL(4)
-        cdll.insertAtBeg(3)
-        cdll.insertAtBeg(2)
-        cdll.insertAtBeg(1)
-        print("List contents are:")
-        cdll.display()
-        cdll.delBeg()
-        cdll.delBeg()
-        print("List contents after deleting:")
-        cdll.display()
-        cdll.searchList(70)
-        cdll.searchList(7)
+    
+        def searchList(self, data):
+            pos = 0
+            tempNode = self.head
+            while True:
+                pos += 1
+                if tempNode.data == data:
+                    print("The required data was found at position:", pos)
+                    break
+                if tempNode == self.tail:
+                    print("The required data does not exist in the list")
+                    break
+                tempNode = tempNode.next
+    
+        def display(self):
+            if not self.head:
+                print("The linked list does not exist")
+                return
+            tempNode = self.head
+            while True:
+                print(tempNode.data)
+                if tempNode == self.tail:
+                    break
+                tempNode = tempNode.next
+    
+    
+    cdll = CDoublyLinkedList()
+    cdll.createCDLL(4)
+    cdll.insertAtBeg(3)
+    cdll.insertAtBeg(2)
+    cdll.insertAtBeg(1)
+    print("List contents are:")
+    cdll.display()
+    cdll.delBeg()
+    cdll.delBeg()
+    print("List contents after deleting:")
+    cdll.display()
+    cdll.searchList(70)
+    cdll.searchList(7)
         
         `,
     type: "Lab",
@@ -1420,16 +1419,16 @@ const experimentData = [
     title: "Implement solution  for Tower of Hanoi",
     code: `
 
-        def towerOfHanoi(n, source, auxiliary, destination):
-            if n == 1:
-                print(f"Move disk 1 from source {source} to destination {destination}")
-                return
-            towerOfHanoi(n - 1, source, destination, auxiliary)
-            print(f"Move disk {n} from source {source} to destination {destination}")
-            towerOfHanoi(n - 1, auxiliary, source, destination)
-    
-        n = int(input("Enter the disk number: "))
-        towerOfHanoi(n, 'A', 'B', 'C')
+    def towerOfHanoi(n, source, auxiliary, destination):
+        if n == 1:
+            print(f"Move disk 1 from source {source} to destination {destination}")
+            return
+        towerOfHanoi(n - 1, source, destination, auxiliary)
+        print(f"Move disk {n} from source {source} to destination {destination}")
+        towerOfHanoi(n - 1, auxiliary, source, destination)
+
+    n = int(input("Enter the disk number: "))
+    towerOfHanoi(n, 'A', 'B', 'C')
             
         `,
     type: "Lab",
@@ -1470,40 +1469,40 @@ const experimentData = [
     name: "implement-queue",
     title: "Implement Queue",
     code: `
-        # Queue
-        queue = []
-        
-        def enqueue():
-            element = input("Enter the element: ")
-            queue.append(element)
-            print("Element is added to queue")
+    # Queue
+    queue = []
+    
+    def enqueue():
+        element = input("Enter the element: ")
+        queue.append(element)
+        print("Element is added to queue")
+        print(queue)
+    
+    def dequeue():
+        if not queue:
+            print("Queue is empty")
+        else:
+            e = queue.pop(0)
+            print("Element removed ", e)
             print(queue)
-        
-        def dequeue():
-            if not queue:
-                print("Queue is empty")
-            else:
-                e = queue.pop(0)
-                print("Element removed ", e)
-                print(queue)
-        
-        def display():
-            print(queue)
-        
-        while True:
-            print("Select the operation: 1. Add  2. Remove  3. Show  4. Quit")
-            choice = int(input())
-            if choice == 1:
-                enqueue()
-            elif choice == 2:
-                dequeue()
-            elif choice == 3:
-                display()
-            elif choice == 4:
-                print("Quit")
-                break
-            else:
-                print("Enter the correct operation")
+    
+    def display():
+        print(queue)
+    
+    while True:
+        print("Select the operation: 1. Add  2. Remove  3. Show  4. Quit")
+        choice = int(input())
+        if choice == 1:
+            enqueue()
+        elif choice == 2:
+            dequeue()
+        elif choice == 3:
+            display()
+        elif choice == 4:
+            print("Quit")
+            break
+        else:
+            print("Enter the correct operation")
             
         `,
     type: "Lab",
@@ -1547,18 +1546,18 @@ const experimentData = [
     title: "Implement Priority Queue",
     code: `
 
-        import queue
-        q = queue.PriorityQueue()
-        q.put(10)
-        q.put(60)
-        q.put(20)
-        q.put(110)
-        q.put(40)
-        print(q.get())
-        print(q.get())
-        print(q.get())
-        print(q.get())
-        print(q.get())
+    import queue
+    q = queue.PriorityQueue()
+    q.put(10)
+    q.put(60)
+    q.put(20)
+    q.put(110)
+    q.put(40)
+    print(q.get())
+    print(q.get())
+    print(q.get())
+    print(q.get())
+    print(q.get())
             
         `,
     type: "Lab",
@@ -1700,22 +1699,22 @@ const experimentData = [
     language: "python",
     title: "Implementations of  BFS",
     code: `
-        import collections
-        def bfs(graph,root):
-            visited,queue = set(),collections.deque([root])
-            visited.add(root)
-            while queue:
-                vertex = queue.popleft()
-                print(str(vertex)+" ",end="")
-                for neighbour in graph[vertex]:
-                    if neighbour not in visited:
-                        visited.add(neighbour)
-                        queue.append(neighbour)
-        
-        if __name__ == '__main__':
-            graph = {0:[1,2],1:[2],2:[3],3:[1,2]}
-            print("Following is Breadth First Traversal")
-            bfs(graph,0)      
+    import collections
+    def bfs(graph,root):
+        visited,queue = set(),collections.deque([root])
+        visited.add(root)
+        while queue:
+            vertex = queue.popleft()
+            print(str(vertex)+" ",end="")
+            for neighbour in graph[vertex]:
+                if neighbour not in visited:
+                    visited.add(neighbour)
+                    queue.append(neighbour)
+    
+    if __name__ == '__main__':
+        graph = {0:[1,2],1:[2],2:[3],3:[1,2]}
+        print("Following is Breadth First Traversal")
+        bfs(graph,0)      
     
         `,
     type: "Lab",
@@ -1761,22 +1760,22 @@ const experimentData = [
     language: "python",
     title: "Implementation of DFS",
     code: `
-        def dfs(graph,start,visited=None):
-            if visited is None:
-                visited = set()
-            visited.add(start)
-            print(start)
-            for next in graph[start]-visited:
-                dfs(graph,next,visited)
-            return visited
+    def dfs(graph,start,visited=None):
+        if visited is None:
+            visited = set()
+        visited.add(start)
+        print(start)
+        for next in graph[start]-visited:
+            dfs(graph,next,visited)
+        return visited
 
-        graph = {'0':set(['1','2']),
-                '1':set(['2']),
-                '2':set(['3']),
-                '3':set(['1','2'])}
+    graph = {'0':set(['1','2']),
+            '1':set(['2']),
+            '2':set(['3']),
+            '3':set(['1','2'])}
 
-        print("Following is Depth First Traversal: ")
-        print(dfs(graph,'0'))
+    print("Following is Depth First Traversal: ")
+    print(dfs(graph,'0'))
 
         `,
     type: "Lab",
